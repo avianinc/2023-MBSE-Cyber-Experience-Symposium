@@ -1,0 +1,26 @@
+chance-of-medical-event
+chance-of-standard
+service-range
+meanPayloadWeight
+maxPayloadWeight
+startup-Costs
+maintenace-cost-per-hour
+chance_of_typeA
+chance_of_typeB
+chance_of_typeC
+number_of_drones
+discharge_adjustment
+
+avgResponseTimeStandard
+avgReponseTimeUrgent
+avgResponseTimeEmergency
+avgResponseTime
+totalUpfrontCosts
+totalOperatingCosts
+maintenaceCostPerMinute
+	emergencyEventCount
+	standardEventCount
+	totalEventCount
+	emergencyEventPerHour
+	standardEventPerHour
+	totalTimeInDays
