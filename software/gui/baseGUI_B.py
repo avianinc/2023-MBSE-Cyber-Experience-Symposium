@@ -36,7 +36,7 @@ class App:
         self.server_ip_entry.grid(row=1, column=1, sticky="w", pady=2)
         self.server_port_entry = tk.Entry(self.server_info_frame)
         self.server_port_entry.grid(row=2, column=1, sticky="w", pady=2)
-        self.auth_key_entry = tk.Entry(self.server_info_frame)
+        self.auth_key_entry = tk.Entry(self.server_info_frame, show="*")
         self.auth_key_entry.grid(row=3, column=1, sticky="w", pady=2)
         self.connect_button = tk.Button(self.server_info_frame, text="Connect", command=self.connect)
         self.connect_button.grid(row=4, column=0, columnspan=1, pady=5)
