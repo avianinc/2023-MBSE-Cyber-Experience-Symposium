@@ -1,0 +1,5 @@
+# type, maxSpeed[km/m], maxPayload[kg], maxBattery[Ah], chargeRate[Ah/m], C[dischargeCosntant],dryWeight[kg],reqPowerPerKg [W/kg],opVoltage[V],upfrontCost,costPerKm
+light,1.333,4.5,50,1.5,1,20.5,170,36,1500,0.33
+medium,1.75,11.3,75,1,1.75,68.7,170,36,3600,0.345
+heavy,2,180,120,0.75,3,296,170,36,14000,0.35
+courier,1.21,300,1000,100,0.1,1587,1000,48,21000,0.375
