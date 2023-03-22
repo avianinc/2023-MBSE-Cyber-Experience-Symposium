@@ -90,11 +90,11 @@ class App:
         self.server_ip_entry.insert(0, "18.205.77.131")
         self.server_port_entry.insert(0, "8111")
         self.auth_key_entry.insert(0, "amRlaGFydDpqa2QyMjE0")
-        self.workspace_combo["values"] = ["Workspace 1", "Workspace 2"]
+        self.workspace_combo["values"] = ["Connect to TWC API..."]
         self.workspace_combo.current(0)
-        self.model_combo["values"] = ["Model 1", "Model 2"]
+        self.model_combo["values"] = [""]
         self.model_combo.current(0)
-        self.instance_combo["values"] = ["Instance 1", "Instance 2"]
+        self.instance_combo["values"] = [""]
         self.instance_combo.current(0)
     
     def connect(self):
