@@ -1,0 +1,141 @@
+[
+    {
+        "data": [
+            {
+                "ldp:membershipResource": {
+                    "@id": "#7d73925a-f5af-4d8f-8b04-0a3985b21409"
+                },
+                "@type": [
+                    "ldp:DirectContainer",
+                    "uml:InstanceSpecification"
+                ],
+                "ldp:contains": [
+                    {
+                        "@id": "301a0877-76cb-4262-b34a-d168a3effdae"
+                    },
+                    {
+                        "@id": "7e851244-7a7b-4310-8e73-84f996174d19"
+                    }
+                ],
+                "ldp:hasMemberRelation": "kerml:ownedElement",
+                "@id": "",
+                "@context": "https: //18.205.77.131:8111/osmc/schemas/umlElementContainer"
+            },
+            {
+                "kerml:name": "vignetteXYX",
+                "@base": "https://18.205.77.131:8111/osmc/resources/64bb1cce-5262-46a0-9240-6cfad9b67d89",
+                "kerml:nsURI": "http://www.nomagic.com/magicdraw/UML/2.5.1",
+                "@type": "uml:InstanceSpecification",
+                "kerml:owner": {
+                    "@id": "e6f09e8d-76a3-4e49-9720-bfb0d8d942b4"
+                },
+                "kerml:revision": "https://18.205.77.131:8111/osmc/resources/64bb1cce-5262-46a0-9240-6cfad9b67d89/revisions/9",
+                "@context": {
+                    "kerml": "https://18.205.77.131:8111/osmc/schema/kerml/20140325",
+                    "uml:InstanceSpecification": "https://18.205.77.131:8111/osmc/schema/uml/2014345/InstanceSpecification"
+                },
+                "kerml:ownedElement": [
+                    {
+                        "@id": "301a0877-76cb-4262-b34a-d168a3effdae"
+                    },
+                    {
+                        "@id": "7e851244-7a7b-4310-8e73-84f996174d19"
+                    }
+                ],
+                "kerml:modifiedTime": "20230327202453UTC",
+                "kerml:esiData": {
+                    "_directedRelationshipOfSource": [],
+                    "_classifierOfInheritedMember": [],
+                    "_representationText": "None",
+                    "_considerIgnoreFragmentOfMessage": [],
+                    "_elementOfSyncElement": [],
+                    "_deploymentOfDeployedArtifact": [],
+                    "classifier": [
+                        {
+                            "@id": "5b1e64ac-e68f-4eca-aed9-bfa102901cc8"
+                        }
+                    ],
+                    "_namespaceOfMember": [
+                        {
+                            "@id": "e6f09e8d-76a3-4e49-9720-bfb0d8d942b4"
+                        }
+                    ],
+                    "ID": "_19_0_4_b5902e3_1677164449477_151445_4773",
+                    "_relationshipOfRelatedElement": [],
+                    "nameExpression": "None",
+                    "owningTemplateParameter": "None",
+                    "_manifestationOfUtilizedElement": [],
+                    "_durationObservationOfEvent": [],
+                    "visibility": "public",
+                    "_messageOfSignature": [],
+                    "_templateParameterSubstitutionOfOwnedActual": "None",
+                    "_componentOfPackagedElement": "None",
+                    "_constraintOfConstrainedElement": [],
+                    "_namespaceOfImportedMember": [],
+                    "clientDependency": [],
+                    "_diagramOfContext": [],
+                    "name": "vignetteXYX",
+                    "_directedRelationshipOfTarget": [],
+                    "_commentOfAnnotatedElement": [],
+                    "supplierDependency": [],
+                    "_informationFlowOfInformationTarget": [],
+                    "ownedComment": [],
+                    "_timeObservationOfEvent": [],
+                    "_informationFlowOfInformationSource": [],
+                    "slot": [
+                        {
+                            "@id": "7e851244-7a7b-4310-8e73-84f996174d19"
+                        },
+                        {
+                            "@id": "301a0877-76cb-4262-b34a-d168a3effdae"
+                        }
+                    ],
+                    "_templateParameterOfOwnedDefault": "None",
+                    "templateParameter": "None",
+                    "_templateParameterOfDefault": [],
+                    "deployment": [],
+                    "owner": [
+                        {
+                            "@id": "e6f09e8d-76a3-4e49-9720-bfb0d8d942b4"
+                        }
+                    ],
+                    "ownedElement": [
+                        {
+                            "@id": "7e851244-7a7b-4310-8e73-84f996174d19"
+                        },
+                        {
+                            "@id": "301a0877-76cb-4262-b34a-d168a3effdae"
+                        }
+                    ],
+                    "visibility__from_PackageableElement": "public",
+                    "specification": "None",
+                    "syncElement": "None",
+                    "_activityPartitionOfRepresents": [],
+                    "_elementValueOfElement": [],
+                    "owningPackage": {
+                        "@id": "e6f09e8d-76a3-4e49-9720-bfb0d8d942b4"
+                    },
+                    "_instanceValueOfInstance": [
+                        {
+                            "@id": "e96c18f5-aced-4ea2-a8eb-b9717511ae13"
+                        }
+                    ],
+                    "stereotypedElement": "None",
+                    "namespace": [
+                        {
+                            "@id": "e6f09e8d-76a3-4e49-9720-bfb0d8d942b4"
+                        }
+                    ],
+                    "mdExtensions": [],
+                    "appliedStereotypeInstance": "None",
+                    "_templateParameterSubstitutionOfActual": [],
+                    "_elementImportOfImportedElement": []
+                },
+                "kerml:resource": "https://18.205.77.131:8111/osmc/resources/64bb1cce-5262-46a0-9240-6cfad9b67d89",
+                "kerml:esiID": "7d73925a-f5af-4d8f-8b04-0a3985b21409",
+                "@id": "#7d73925a-f5af-4d8f-8b04-0a3985b21409"
+            }
+        ],
+        "status": 200
+    }
+]
