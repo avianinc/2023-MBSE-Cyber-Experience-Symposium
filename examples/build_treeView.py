@@ -54,8 +54,22 @@ paned_window.add(frame2, weight=1)
 tree = ttk.Treeview(frame1)
 tree.pack(fill=tk.BOTH, expand=True)
 
-text_area = tk.Text(frame2, wrap=tk.WORD)
-text_area.pack(fill=tk.BOTH, expand=True)
+text_area_frame = ttk.Frame(frame2)
+text_area_frame.pack(fill=tk.BOTH, expand=True)
+
+text_area = tk.Text(text_area_frame, wrap=tk.NONE)
+text_area.grid(row=0, column=0, sticky=tk.NSEW)
+
+scrollbar_y = ttk.Scrollbar(text_area_frame, orient=tk.VERTICAL, command=text_area.yview)
+scrollbar_y.grid(row=0, column=1, sticky=tk.NS)
+text_area.config(yscrollcommand=scrollbar_y.set)
+
+scrollbar_x = ttk.Scrollbar(text_area_frame, orient=tk.HORIZONTAL, command=text_area.xview)
+scrollbar_x.grid(row=1, column=0, sticky=tk.EW)
+text_area.config(xscrollcommand=scrollbar_x.set)
+
+text_area_frame.columnconfigure(0, weight=1)
+text_area_frame.rowconfigure(0, weight=1)
 
 root_node_id = '7d73925a-f5af-4d8f-8b04-0a3985b21409'  # Replace with the desired root node ID
 root_node = create_tree(root_node_id)
