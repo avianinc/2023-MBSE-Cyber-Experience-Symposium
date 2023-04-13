@@ -42,11 +42,14 @@ def on_treeview_select(event):
 root = tk.Tk()
 root.geometry("800x600")
 
-frame1 = ttk.Frame(root)
-frame1.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
+paned_window = ttk.PanedWindow(root, orient=tk.HORIZONTAL)
+paned_window.pack(fill=tk.BOTH, expand=True)
 
-frame2 = ttk.Frame(root)
-frame2.pack(side=tk.RIGHT, fill=tk.BOTH, expand=True)
+frame1 = ttk.Frame(paned_window)
+paned_window.add(frame1, weight=1)
+
+frame2 = ttk.Frame(paned_window)
+paned_window.add(frame2, weight=1)
 
 tree = ttk.Treeview(frame1)
 tree.pack(fill=tk.BOTH, expand=True)
@@ -54,7 +57,7 @@ tree.pack(fill=tk.BOTH, expand=True)
 text_area = tk.Text(frame2, wrap=tk.WORD)
 text_area.pack(fill=tk.BOTH, expand=True)
 
-root_node_id = '1dbb35a2-d482-4231-a052-c86905198cdc'  # Replace with the desired root node ID
+root_node_id = '7d73925a-f5af-4d8f-8b04-0a3985b21409'  # Replace with the desired root node ID
 root_node = create_tree(root_node_id)
 insert_treeview_nodes(tree, '', root_node)
 
