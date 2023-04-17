@@ -2,7 +2,7 @@ import json
 from anytree import Node, RenderTree
 
 # Load the JSON object into a Python dictionary
-with open('elements.json', 'r') as f:
+with open('./examples/elements.json', 'r') as f:
     data = json.load(f)
 
 #list the keys

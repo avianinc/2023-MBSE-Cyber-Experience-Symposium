@@ -14,12 +14,14 @@ Date: 3/2/2023
 import tkinter as tk
 from tkinter import ttk
 from tkinter import filedialog
+from anytree import Node, RenderTree
 import os
 import requests
 import json
 
 
 class App:
+
     def __init__(self, master):
         self.master = master
         self.master.title("TWC API Interactions - Demo")
@@ -96,6 +98,9 @@ class App:
         self.model_combo.current(0)
         self.instance_combo["values"] = [""]
         self.instance_combo.current(0)
+
+        # Bind the tree view to show the object data
+        self.instance_tree.bind('<<TreeviewSelect>>', self.on_treeview_select)
     
     def connect(self):
         server_ip = self.server_ip_entry.get()
@@ -200,6 +205,11 @@ class App:
         resp_elementListData = requests.post(url,headers=headers, verify=False, data = elementList) # turn of verification here since our server is not super secure
         self.elementListData = resp_elementListData.json() # just get the added (availibe items are removed, added, changed, and empty)
         
+        # Load the JSON object into a Python dictionary -- hack for now...
+        with open('./examples/elements.json', 'r') as f:
+            self.data = json.load(f)
+            print(type(self.data))
+
         # Lets loop throug the selected projects elemetns and find the index of all instances
         instanceSpecificationIndex = {}
         for i in range(len(elementList_json)): # Where i is the uuid of the element in this case
@@ -208,7 +218,7 @@ class App:
                 
         # lets create a combobox to list the avalible instances (models) in this workspace
         # Build arrays of the items
-        self.instanceIds = {}
+        self.instanceIds = {} #indexes not uuids
         self.instanceNames = {}
         
         # Lets build a list of workspaces for selection
@@ -225,28 +235,70 @@ class App:
         self.instance_combo.current(0)
         
     def instance_changed(self, event):
-                                           
+        # clean out any current view
+        self.clear_tree()
+
         instance_name = self.instance_combo.get()
         instance_id = self.instance_dict[instance_name]
-        instance_uuid = self.instanceIds[instance_id]
+        instance_blob = self.instanceIds[instance_id]
+        instance_uuid = instance_blob['data'][0]['ldp:membershipResource']['@id'].replace('#','')
         
         self.data_text.delete("1.0", "end")
         self.data_text.insert("end", instance_uuid)
-        
-    def add_json_to_tree(self, json_data, parent, node_id):
-       if isinstance(json_data, dict):
-           for key in json_data:
-               item_id = self.tree.insert(parent, "end", text=key, open=True)
-               self.add_json_to_tree(json_data[key], item_id, item_id)
 
-       elif isinstance(json_data, list):
-           for i in range(len(json_data)):
-               item_id = self.tree.insert(parent, "end", text=node_id + "[" + str(i) + "]", open=True)
-               self.add_json_to_tree(json_data[i], item_id, node_id + "[" + str(i) + "]")
+        # Lets create the node tree
+        # {'data': [{'ldp:membershipResource': {'@id': '#7d73925a-f5af-4d8f-8b04-0a3985b21409'}
+        # root_node_id = '7d73925a-f5af-4d8f-8b04-0a3985b21409'  # Replace with the desired root node ID
+        root_node_id = instance_uuid
+        root_node = self.create_tree(root_node_id)
+        self.insert_treeview_nodes(self.instance_tree, '', root_node)
 
-       else:
-           self.tree.insert(parent, "end", text=json_data)
-        
+    def clear_tree(self):
+        # delete all items in the tree
+        for item in self.instance_tree.get_children():
+            self.instance_tree.delete(item)
+
+    def create_tree(self, node_id):
+        node_data = self.data[node_id]['data']
+        node_type = node_data[0]['@type']
+        node_name = node_id
+
+        if node_type == 'uml:Slot':
+            owned_element_id = node_data[1]['kerml:ownedElement'][0]['@id']
+            node_name = self.data[owned_element_id]['data'][1]['esiData:instanceID']
+        else:
+            node_name = node_id
+
+        node = Node(node_name)
+
+        owned_elements = self.data[node_id]['data'][1]['kerml:ownedElement']
+        for owned_element in owned_elements:
+            element_id = owned_element['@id']
+            child_node = self.create_tree(element_id)
+            child_node.parent = node
+
+        return node
+    
+    # The function to insert nodes into the Treeview
+    def insert_treeview_nodes(self, treeview, parent, tree_node):
+        treeview_node = treeview.insert(parent, 'end', text=tree_node.name)
+
+        for child in tree_node.children:
+            self.insert_treeview_nodes(treeview, treeview_node, child)
+
+        # Set the node to the open state
+        treeview.item(treeview_node, open=True)
+
+    def on_treeview_select(self, event):
+        item_id = self.instance_tree.item(self.instance_tree.focus())['text']
+        if item_id in self.data:
+            json_data = self.data[item_id]
+            self.data_text.delete(1.0, tk.END)
+            self.data_text.insert(tk.END, json.dumps(json_data, indent=2))
+        else:
+            self.data_text.delete(1.0, tk.END)
+
+    
 
     def save(self):
         data = {
@@ -294,8 +346,12 @@ class App:
     
     def about(self):
         tk.messagebox.showinfo("About", "My App v1.0")
-    
+
+
+        
+
 root = tk.Tk()
 app = App(root)
 root.mainloop()
+
     

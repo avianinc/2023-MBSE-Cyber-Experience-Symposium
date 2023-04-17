@@ -2762,7 +2762,7 @@
                 "@context": "https://18.205.77.131:8111/osmc/schemas/umlElementContainer"
             },
             {
-                "kerml:name": "AOI",
+                "kerml:name": "area",
                 "@base": "https://18.205.77.131:8111/osmc/resources/64bb1cce-5262-46a0-9240-6cfad9b67d89",
                 "kerml:nsURI": "http://www.nomagic.com/magicdraw/UML/2.5.1",
                 "@type": "uml:InstanceSpecification",
