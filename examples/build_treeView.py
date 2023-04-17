@@ -4,12 +4,20 @@ from anytree import Node, RenderTree
 import json
 
 # Load the JSON object into a Python dictionary
-with open('elements.json', 'r') as f:
+with open('./examples/elements.json', 'r') as f:
     data = json.load(f)
 
-# The function to create the tree structure
 def create_tree(node_id):
+    node_data = data[node_id]['data']
+    node_type = node_data[0]['@type']
     node_name = node_id
+
+    if node_type == 'uml:Slot':
+        owned_element_id = node_data[1]['kerml:ownedElement'][0]['@id']
+        node_name = data[owned_element_id]['data'][1]['esiData:instanceID']
+    else:
+        node_name = node_id
+
     node = Node(node_name)
 
     owned_elements = data[node_id]['data'][1]['kerml:ownedElement']
