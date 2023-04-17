@@ -178,7 +178,7 @@ class App:
         workspace_id = self.workspaces_dict[workspace_name]
         workspace_uuid = self.workspace_ids[workspace_id]
         
-        # So now the funny stuff.. move to a method
+        # So now the funny stuff.. move to a method - all from jupyter demos
         call = f'/osmc/workspaces/{workspace_uuid}/resources/{model_uuid}/revisions'
         url = f'https://{self.server_ip_entry.get()}:{self.server_port_entry.get()}{call}'
         headers = {"accept": "application/ld+json", "authorization": f"Basic {self.auth_key_entry.get()}"}
@@ -209,6 +209,8 @@ class App:
         #with open('./examples/elements.json', 'r') as f:
         #    self.data = json.load(f)
         #    print(type(self.data))
+
+        # OK so now its working locally... just dump into a json file from above
         self.data = self.elementListData
 
         # Lets loop throug the selected projects elemetns and find the index of all instances
