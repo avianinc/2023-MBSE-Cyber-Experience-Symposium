@@ -206,9 +206,10 @@ class App:
         self.elementListData = resp_elementListData.json() # just get the added (availibe items are removed, added, changed, and empty)
         
         # Load the JSON object into a Python dictionary -- hack for now...
-        with open('./examples/elements.json', 'r') as f:
-            self.data = json.load(f)
-            print(type(self.data))
+        #with open('./examples/elements.json', 'r') as f:
+        #    self.data = json.load(f)
+        #    print(type(self.data))
+        self.data = self.elementListData
 
         # Lets loop throug the selected projects elemetns and find the index of all instances
         instanceSpecificationIndex = {}
