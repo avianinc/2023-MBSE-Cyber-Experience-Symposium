@@ -280,11 +280,16 @@ class App:
             child_node = self.create_tree(element_id)
             child_node.parent = node
 
-        # instances = self.data[node_id]['data'][1]['kerml:esiData'][0]['instance']['@id']
-        # for instance in instances:
-        #      instance_id = instance['@id']
-        #      child_node = self.create_tree(instance_id)
-        #      child_node.parent = node
+        try:
+            instances = self.data[node_id]['data'][1]['kerml:esiData']['instance']['@id']
+            print(instances)
+            for instance in instances:
+                instance_id = instance['@id']
+                child_node = self.create_tree(instance_id)
+                child_node.parent = node
+        except:
+            pass
+
 
         return node
     
