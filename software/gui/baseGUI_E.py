@@ -116,6 +116,10 @@ class App:
         # Add data_frame to paned window
         self.paned_window.add(self.data_frame)
 
+        # Bind the tree view to show the object data and open a new window on double click
+        self.instance_tree.bind('<<TreeviewSelect>>', self.on_treeview_select)
+        self.instance_tree.bind('<Double-1>', self.on_treeview_double_click)
+
         # Menu
         self.menu = tk.Menu(self.master)
         self.master.config(menu=self.menu)
@@ -156,6 +160,36 @@ class App:
         self.export_button = tk.Button(self.button_frame, text="Export Tree as JSON", command=self.export_instance_tree_as_json)
         self.export_button.pack()
 
+    def on_treeview_double_click(self, event):
+        item = self.instance_tree.selection()[0]
+        item_text = self.instance_tree.item(item, "text")
+        
+        new_window = tk.Toplevel(self.master)
+        new_window.title("New Window")
+        new_window.geometry("300x200")
+
+        label = tk.Label(new_window, text=f"Selected item: {item_text}")
+        label.pack(padx=10, pady=10)
+
+        # Assuming 'data' is a dictionary containing your treeview data
+        value = self.data[item_text]['data'][1]['kerml:esiData']['value']
+
+        value_label = tk.Label(new_window, text="Value")
+        value_label.pack(padx=10, pady=(0, 5))
+        
+        value_entry = tk.Entry(new_window)
+        value_entry.pack(padx=10, pady=(0, 10))
+        value_entry.insert(0, value)
+
+        # Add a button that calls the 'update_literal_real_value_thru_api' function
+        update_button = tk.Button(new_window, text="Update Value", command=self.update_literal_real_value_thru_api)
+        update_button.pack(pady=(0, 10))
+
+    def update_literal_real_value_thru_api(self):
+        # Your implementation to update the value through API
+        print("Update value through API")
+
+        
 
     def connect(self):
         server_ip = self.server_ip_entry.get()
