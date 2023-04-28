@@ -182,23 +182,46 @@ class App:
         value_entry.insert(0, value)
 
         # Add a button that calls the 'update_literal_real_value_thru_api' function
-        update_button = tk.Button(new_window, text="Update Value", command=self.update_literal_real_value_thru_api)
+        #update_button = tk.Button(new_window, text="Update Value", command=self.update_literal_real_value_thru_api)
+        #update_button.pack(pady=(0, 10))
+
+        # Add a button that calls the 'update_literal_real_value_thru_api' function with the updated value and item_text
+        update_button = tk.Button(new_window, text="Update Value",
+                                  command=lambda: self.update_literal_real_value_thru_api(value_entry.get(), item_text))
         update_button.pack(pady=(0, 10))
 
-    def update_literal_real_value_thru_api(self):
+    def update_literal_real_value_thru_api(self, value, uuid):
         # Your implementation to update the value through API
-        print("Update value through API")
+        print(f"Update value through API {value}")
+
+        # Create the payload
+        dataValue = {"kerml:esiData":{"value":"0.0"}} # Build the data payload
+        dataValue["kerml:esiData"]["value"] = value # Update the json string
+        
+        # Now build the api call
+        call_string = f'/osmc/resources/{self.model_uuid}/elements/{uuid}'
+        url = f'https://{self.server_ip}:{self.server_port}{call_string}'
+        headers={"accept":"application/ld+json", "authorization":f"Basic {self.auth_key}", "Content-Type":"application/ld+json"}
+        
+        # Have to add a new header of content type
+        resp_value = requests.patch(url, headers = headers, verify = False, json = dataValue) # turn of verification here since our server is not super secure
+        print(url)
+        print(dataValue)
+
+        # resp_value.status_code
+        # print(dataValue)
+        print(resp_value.content)
 
         
 
     def connect(self):
-        server_ip = self.server_ip_entry.get()
-        server_port = self.server_port_entry.get()
-        auth_key = self.auth_key_entry.get()
+        self.server_ip = self.server_ip_entry.get()
+        self.server_port = self.server_port_entry.get()
+        self.auth_key = self.auth_key_entry.get()
     
         call_string = '/osmc/workspaces?includeBody=True'
-        url = f'https://{server_ip}:{server_port}{call_string}'
-        headers = {"accept": "application/ld+json", "authorization": f"Basic {auth_key}"}
+        url = f'https://{self.server_ip}:{self.server_port}{call_string}'
+        headers = {"accept": "application/ld+json", "authorization": f"Basic {self.auth_key}"}
         resp_ws = requests.get(url, headers=headers, verify=False)
     
         if resp_ws.status_code == 200:
@@ -259,16 +282,16 @@ class App:
     def model_changed(self, event):
         
         # need to rename model to project
-        model_name = self.model_combo.get()
-        model_id = self.model_dict[model_name]
-        model_uuid = self.project_ids[model_id]
+        self.model_name = self.model_combo.get()
+        self.model_id = self.model_dict[self.model_name]
+        self.model_uuid = self.project_ids[self.model_id]
                                         
-        workspace_name = self.workspace_combo.get()
-        workspace_id = self.workspaces_dict[workspace_name]
-        workspace_uuid = self.workspace_ids[workspace_id]
+        self.workspace_name = self.workspace_combo.get()
+        self.workspace_id = self.workspaces_dict[self.workspace_name]
+        self.workspace_uuid = self.workspace_ids[self.workspace_id]
         
         # So now the funny stuff.. move to a method - all from jupyter demos
-        call = f'/osmc/workspaces/{workspace_uuid}/resources/{model_uuid}/revisions'
+        call = f'/osmc/workspaces/{self.workspace_uuid}/resources/{self.model_uuid}/revisions'
         url = f'https://{self.server_ip_entry.get()}:{self.server_port_entry.get()}{call}'
         headers = {"accept": "application/ld+json", "authorization": f"Basic {self.auth_key_entry.get()}"}
         resp_revList = requests.get(url, headers=headers, verify=False) # turn of verification here since our server is not super secure
@@ -279,7 +302,7 @@ class App:
         # Then were get the full element list
         sourceRevision = 1
         targetRevision = latestRevision
-        call = f'/osmc/workspaces/{workspace_uuid}/resources/{model_uuid}/revisiondiff?source={sourceRevision}&target={targetRevision}'
+        call = f'/osmc/workspaces/{self.workspace_uuid}/resources/{self.model_uuid}/revisiondiff?source={sourceRevision}&target={targetRevision}'
         url = f'https://{self.server_ip_entry.get()}:{self.server_port_entry.get()}{call}'
         headers = {"accept": "application/ld+json", "authorization": f"Basic {self.auth_key_entry.get()}"}
         resp_elementList = requests.get(url,headers=headers, verify=False) # turn of verification here since our server is not super secure
@@ -288,7 +311,7 @@ class App:
         elementList = elementList.replace('"','').replace("[","").replace("]","").replace(" ","") # remove the sting junk
         
         # Now we loop through all of the elements and pull the details (again... needs to be cleaned method)
-        call = f'/osmc/resources/{model_uuid}/elements'
+        call = f'/osmc/resources/{self.model_uuid}/elements'
         url = f'https://{self.server_ip_entry.get()}:{self.server_port_entry.get()}{call}'
         headers={"accept":"application/ld+json", "Content-Type":"text/plain", "authorization":f"Basic {self.auth_key_entry.get()}"}
         resp_elementListData = requests.post(url,headers=headers, verify=False, data = elementList) # turn of verification here since our server is not super secure
