@@ -482,11 +482,20 @@ class App:
     def get_tree_data(self, tree, node):
         children = tree.get_children(node)
         if not children:
-            return tree.item(node, "text")
-
+            item_data = tree.item(node)
+            node_data = {
+                "name": item_data["text"],
+                "attributes": item_data["values"][1:],  # Use slicing to exclude the "Icon" value
+            }
+            if item_data["text"] in self.data:
+                node_data.update(self.data[item_data["text"]])
+            return node_data
+            
         node_data = {}
         for child in children:
-            node_data[tree.item(child, "text")] = self.get_tree_data(tree, child)
+            child_data = self.get_tree_data(tree, child)
+            if child_data:
+                node_data[tree.item(child, "text")] = child_data
         return node_data
 
 if __name__ == "__main__":
