@@ -26,7 +26,8 @@ class App:
     def __init__(self, master):
         self.master = master
         self.master.title("TWC API Interactions - Demo")
-        self.master.geometry("800x680")
+        self.master.geometry("980x640")
+        self.master.iconbitmap("./software/gui/images/avian.ico")
 
         # Configure the column weights to allow the paned window to expand
         self.master.columnconfigure(0, weight=1)
@@ -468,7 +469,15 @@ class App:
             tk.messagebox.showerror("Error", "Documentation file not found.")
     
     def about(self):
-        tk.messagebox.showinfo("About", "My App v1.0")
+        title = "TWC API Interactions - Demo v0.0"
+        company = "Company: AVIAN Inc. - (http://www.avian.com)"
+        author = "Author: J.K. DeHart"
+        email = "Email: jdehart@avian.com"
+        github = "Github: https://github.com/avianinc/2023-MBSE-Cyber-Experience-Symposium"
+        summary = "This program demonstrates interactions with the TWC API to help present the complexitites withing digital thread hidden behind the arrows."
+        message = f"{title}\n\n{company}\n{author}\n{email}\n{github}\n\n{summary}"
+        tk.messagebox.showinfo("About", message)
+
 
     def export_instance_tree_as_json(self):
         filename = filedialog.asksaveasfilename(defaultextension='.json', filetypes=[('JSON Files', '*.json')])

@@ -1,1 +1,38 @@
-Add documentation here...
+TWC API Interactions - Documentation
+
+Purpose
+The purpose of this tool is to allow the users to interact with Systems 
+models and specifically instances of models created using Cameo Systems 
+Modeler (CSM) through the use of Dassault's Teamwork Cloud (TWC) REST API.
+
+Features
+- Connect to TWC instance by providing IP, Port, and basic authorization key.
+- Select Workspace, Models, and Instance.
+- Populates the 'Instance Tree' treeview with the node name as the 
+  elements server uuid.
+- View associated attributes for any selected element.
+- Double click any node in the treeview and if this element contains an 
+  esi:Data['value'] a popup window is presented which allows the user to 
+  update the value on the TWC server.
+- Export and save selected and updated instance as a json file.
+- Connection Authentication
+- A basic authentication key is needed and can be obtained by the user 
+  though their specific instances TWC REST API Swagger UI. 
+
+To obtain the authenication key follow these steps:
+- Browse the TWC REST API Swagger page.
+- Click the 'Authenticate' button.
+- Input a username and password.
+- Execute the "Get list of workspaces".
+- The curl response will include the basic authentication key in the 
+  header information.
+- Exporting to JSON
+- The user can export and save to a file the selected and updated 
+  instance as a json file for consumption by down line tools by pressing 
+  the 'Export Tree as JSON" button below the 'Data' text area.
+
+Contact Information
+Author: J.K. DeHart
+Email: jdehart@avian.com
+Company: AVIAN Inc. (http://www.avian.com)
+GitHub Page: https://github.com/avianinc/2023-MBSE-Cyber-Experience-Symposium
