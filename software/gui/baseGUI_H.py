@@ -25,6 +25,7 @@ import os
 import requests
 import json
 from tkinter import filedialog
+import re
 
 class CustomNode(Node):
     # Created to add some additional attributes to the node
@@ -550,13 +551,51 @@ class App:
             return
         
         # Get the data and attributes to build a json file from the instance tree
-        """is there way to get attributes from the instance tree?"""
         #tree_data = self.get_tree_data(self.instance_tree, self.instance_tree.get_children()[0])
         tree_data = self.get_tree_data(self.instance_tree, "")
 
+        # Process the data to remove the instance and name keys
+        processed_data_A = self.process_dict(tree_data)
+        processed_data_B = self.separate_uuids(processed_data_A)
+
         # Save the data to a JSON file
         with open(filename, "w") as json_file:
-            json.dump(tree_data, json_file, ensure_ascii=True, indent=4)
+            json.dump(processed_data_B, json_file, ensure_ascii=True, indent=2)
+
+    def process_dict(self, d):
+        # this function cleans the json data from the treeview removing the instance and name keys
+        new_dict = {}
+        for k, v in d.items():
+            if k.lower().startswith('instance') or k.lower().startswith('name') or k.lower().startswith('attributes'):
+                if isinstance(v, dict):
+                    new_dict.update(self.process_dict(v))
+            else:
+                if isinstance(v, dict):
+                    new_dict[k] = self.process_dict(v)
+                else:
+                    new_dict[k] = v
+        return new_dict
+
+    def separate_uuids(self, obj, parent_key=None):
+        # This function separates the uuid from the name in the treeview and adds it to the attributes
+        if isinstance(obj, dict):
+            new_obj = {}
+            for key, value in obj.items():
+                match = re.match(r'^(.*?) \((.*?)\)$', key)
+                if match:
+                    new_key, uuid = match.groups()
+                    new_value = self.separate_uuids(value, new_key)
+                    item = {"name": new_key, "uuid": uuid, "attributes": new_value}
+                else:
+                    new_key = key
+                    new_value = self.separate_uuids(value, parent_key)
+                    item = {"name": new_key, "attributes": new_value}
+                new_obj[new_key] = item
+            return new_obj
+        elif isinstance(obj, list):
+            return [self.separate_uuids(item, parent_key) for item in obj]
+        else:
+            return obj    
 
     def save_data(self):
         # Get the filename to save the JSON file as

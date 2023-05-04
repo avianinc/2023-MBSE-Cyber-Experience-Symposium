@@ -1,0 +1,735 @@
+{
+    "9c8ab8a4-25a1-40f5-909c-15264d7bae33": {
+        "2ff833ef-e13d-4bb1-a761-1b77792f9e3a": {
+            "74fda7f7-59bb-4cf2-befc-333fcd61393a": {
+                "2cad47a6-f98b-4f01-aa7c-fb3c04b59044": {
+                    "189c64e2-67f1-45eb-9a79-5fdb94fc4bd4": {
+                        "62800cf3-7e49-4a71-9d66-432f2c5719db": {
+                            "name": "62800cf3-7e49-4a71-9d66-432f2c5719db",
+                            "attributes": "",
+                            "data": [
+                                {
+                                    "ldp:membershipResource": {
+                                        "@id": "#62800cf3-7e49-4a71-9d66-432f2c5719db"
+                                    },
+                                    "@type": [
+                                        "ldp:DirectContainer",
+                                        "uml:LiteralReal"
+                                    ],
+                                    "ldp:contains": [],
+                                    "ldp:hasMemberRelation": "kerml:ownedElement",
+                                    "@id": "",
+                                    "@context": "https://18.205.77.131:8111/osmc/schemas/umlElementContainer"
+                                },
+                                {
+                                    "kerml:name": "Diameter",
+                                    "@base": "https://18.205.77.131:8111/osmc/resources/64bb1cce-5262-46a0-9240-6cfad9b67d89",
+                                    "kerml:nsURI": "http://www.nomagic.com/magicdraw/UML/2.5.1",
+                                    "@type": "uml:LiteralReal",
+                                    "kerml:owner": {
+                                        "@id": "189c64e2-67f1-45eb-9a79-5fdb94fc4bd4"
+                                    },
+                                    "kerml:revision": "https://18.205.77.131:8111/osmc/resources/64bb1cce-5262-46a0-9240-6cfad9b67d89/revisions/38",
+                                    "@context": {
+                                        "kerml": "https://18.205.77.131:8111/osmc/schema/kerml/20140325",
+                                        "uml:LiteralReal": "https://18.205.77.131:8111/osmc/schema/uml/2014345/LiteralReal"
+                                    },
+                                    "kerml:ownedElement": [],
+                                    "kerml:modifiedTime": "20230503194338UTC",
+                                    "kerml:esiData": {
+                                        "owningConstraint": null,
+                                        "_activityEdgeOfWeight": null,
+                                        "_classifierOfInheritedMember": [],
+                                        "_directedRelationshipOfSource": [],
+                                        "_representationText": null,
+                                        "_intervalOfMax": [],
+                                        "_messageOfArgument": null,
+                                        "_considerIgnoreFragmentOfMessage": [],
+                                        "type": null,
+                                        "_interactionConstraintOfMinint": null,
+                                        "_elementOfSyncElement": [],
+                                        "_durationOfExpr": null,
+                                        "owningInstanceSpec": null,
+                                        "_namespaceOfMember": [],
+                                        "_interactionConstraintOfMaxint": null,
+                                        "ID": "_19_0_4_b5902e3_1682202042150_603510_11",
+                                        "_relationshipOfRelatedElement": [],
+                                        "nameExpression": null,
+                                        "owningTemplateParameter": null,
+                                        "_manifestationOfUtilizedElement": [],
+                                        "_interactionUseOfArgument": null,
+                                        "_durationObservationOfEvent": [],
+                                        "visibility": "public",
+                                        "_joinNodeOfJoinSpec": null,
+                                        "_objectNodeOfUpperBound": null,
+                                        "_messageOfSignature": [],
+                                        "_templateParameterSubstitutionOfOwnedActual": null,
+                                        "_componentOfPackagedElement": null,
+                                        "_constraintOfConstrainedElement": [],
+                                        "_namespaceOfImportedMember": [],
+                                        "clientDependency": [],
+                                        "_changeEventOfChangeExpression": null,
+                                        "_diagramOfContext": [],
+                                        "_messageOfTarget": null,
+                                        "name": "Diameter",
+                                        "_directedRelationshipOfTarget": [],
+                                        "_commentOfAnnotatedElement": [],
+                                        "supplierDependency": [],
+                                        "_informationFlowOfInformationTarget": [],
+                                        "ownedComment": [],
+                                        "owningUpper": null,
+                                        "_timeObservationOfEvent": [],
+                                        "_lifelineOfSelector": null,
+                                        "_informationFlowOfInformationSource": [],
+                                        "owningParameter": null,
+                                        "_templateParameterOfOwnedDefault": null,
+                                        "templateParameter": null,
+                                        "_timeExpressionOfExpr": null,
+                                        "value": "1253.0",
+                                        "_templateParameterOfDefault": [],
+                                        "_valuePinOfValue": null,
+                                        "owner": [
+                                            {
+                                                "@id": "189c64e2-67f1-45eb-9a79-5fdb94fc4bd4"
+                                            }
+                                        ],
+                                        "owningLower": null,
+                                        "_interactionUseOfReturnValue": null,
+                                        "ownedElement": [],
+                                        "visibility__from_PackageableElement": "public",
+                                        "expression": null,
+                                        "owningSlot": {
+                                            "@id": "189c64e2-67f1-45eb-9a79-5fdb94fc4bd4"
+                                        },
+                                        "owningProperty": null,
+                                        "_valueSpecificationActionOfValue": null,
+                                        "syncElement": null,
+                                        "_activityPartitionOfRepresents": [],
+                                        "_elementValueOfElement": [],
+                                        "owningPackage": null,
+                                        "_activityEdgeOfGuard": null,
+                                        "_intervalOfMin": [],
+                                        "namespace": [],
+                                        "mdExtensions": [],
+                                        "appliedStereotypeInstance": null,
+                                        "_templateParameterSubstitutionOfActual": [],
+                                        "_elementImportOfImportedElement": []
+                                    },
+                                    "kerml:resource": "https://18.205.77.131:8111/osmc/resources/64bb1cce-5262-46a0-9240-6cfad9b67d89",
+                                    "kerml:esiID": "62800cf3-7e49-4a71-9d66-432f2c5719db",
+                                    "@id": "#62800cf3-7e49-4a71-9d66-432f2c5719db"
+                                }
+                            ],
+                            "status": 200
+                        }
+                    },
+                    "019dc3ff-2549-4aa2-86c4-c08d6600d257": {
+                        "b17d016a-8316-40a1-a146-bb5febf4a122": {
+                            "name": "b17d016a-8316-40a1-a146-bb5febf4a122",
+                            "attributes": "",
+                            "data": [
+                                {
+                                    "ldp:membershipResource": {
+                                        "@id": "#b17d016a-8316-40a1-a146-bb5febf4a122"
+                                    },
+                                    "@type": [
+                                        "ldp:DirectContainer",
+                                        "uml:LiteralReal"
+                                    ],
+                                    "ldp:contains": [],
+                                    "ldp:hasMemberRelation": "kerml:ownedElement",
+                                    "@id": "",
+                                    "@context": "https://18.205.77.131:8111/osmc/schemas/umlElementContainer"
+                                },
+                                {
+                                    "kerml:name": "Long",
+                                    "@base": "https://18.205.77.131:8111/osmc/resources/64bb1cce-5262-46a0-9240-6cfad9b67d89",
+                                    "kerml:nsURI": "http://www.nomagic.com/magicdraw/UML/2.5.1",
+                                    "@type": "uml:LiteralReal",
+                                    "kerml:owner": {
+                                        "@id": "019dc3ff-2549-4aa2-86c4-c08d6600d257"
+                                    },
+                                    "kerml:revision": "https://18.205.77.131:8111/osmc/resources/64bb1cce-5262-46a0-9240-6cfad9b67d89/revisions/38",
+                                    "@context": {
+                                        "kerml": "https://18.205.77.131:8111/osmc/schema/kerml/20140325",
+                                        "uml:LiteralReal": "https://18.205.77.131:8111/osmc/schema/uml/2014345/LiteralReal"
+                                    },
+                                    "kerml:ownedElement": [],
+                                    "kerml:modifiedTime": "20230503194338UTC",
+                                    "kerml:esiData": {
+                                        "owningConstraint": null,
+                                        "_activityEdgeOfWeight": null,
+                                        "_classifierOfInheritedMember": [],
+                                        "_directedRelationshipOfSource": [],
+                                        "_representationText": null,
+                                        "_intervalOfMax": [],
+                                        "_messageOfArgument": null,
+                                        "_considerIgnoreFragmentOfMessage": [],
+                                        "type": null,
+                                        "_interactionConstraintOfMinint": null,
+                                        "_elementOfSyncElement": [],
+                                        "_durationOfExpr": null,
+                                        "owningInstanceSpec": null,
+                                        "_namespaceOfMember": [],
+                                        "_interactionConstraintOfMaxint": null,
+                                        "ID": "_19_0_4_b5902e3_1682202051522_302230_23",
+                                        "_relationshipOfRelatedElement": [],
+                                        "nameExpression": null,
+                                        "owningTemplateParameter": null,
+                                        "_manifestationOfUtilizedElement": [],
+                                        "_interactionUseOfArgument": null,
+                                        "_durationObservationOfEvent": [],
+                                        "visibility": "public",
+                                        "_joinNodeOfJoinSpec": null,
+                                        "_objectNodeOfUpperBound": null,
+                                        "_messageOfSignature": [],
+                                        "_templateParameterSubstitutionOfOwnedActual": null,
+                                        "_componentOfPackagedElement": null,
+                                        "_constraintOfConstrainedElement": [],
+                                        "_namespaceOfImportedMember": [],
+                                        "clientDependency": [],
+                                        "_changeEventOfChangeExpression": null,
+                                        "_diagramOfContext": [],
+                                        "_messageOfTarget": null,
+                                        "name": "Long",
+                                        "_directedRelationshipOfTarget": [],
+                                        "_commentOfAnnotatedElement": [],
+                                        "supplierDependency": [],
+                                        "_informationFlowOfInformationTarget": [],
+                                        "ownedComment": [],
+                                        "owningUpper": null,
+                                        "_timeObservationOfEvent": [],
+                                        "_lifelineOfSelector": null,
+                                        "_informationFlowOfInformationSource": [],
+                                        "owningParameter": null,
+                                        "_templateParameterOfOwnedDefault": null,
+                                        "templateParameter": null,
+                                        "_timeExpressionOfExpr": null,
+                                        "value": "99.9999",
+                                        "_templateParameterOfDefault": [],
+                                        "_valuePinOfValue": null,
+                                        "owner": [
+                                            {
+                                                "@id": "019dc3ff-2549-4aa2-86c4-c08d6600d257"
+                                            }
+                                        ],
+                                        "owningLower": null,
+                                        "_interactionUseOfReturnValue": null,
+                                        "ownedElement": [],
+                                        "visibility__from_PackageableElement": "public",
+                                        "expression": null,
+                                        "owningSlot": {
+                                            "@id": "019dc3ff-2549-4aa2-86c4-c08d6600d257"
+                                        },
+                                        "owningProperty": null,
+                                        "_valueSpecificationActionOfValue": null,
+                                        "syncElement": null,
+                                        "_activityPartitionOfRepresents": [],
+                                        "_elementValueOfElement": [],
+                                        "owningPackage": null,
+                                        "_activityEdgeOfGuard": null,
+                                        "_intervalOfMin": [],
+                                        "namespace": [],
+                                        "mdExtensions": [],
+                                        "appliedStereotypeInstance": null,
+                                        "_templateParameterSubstitutionOfActual": [],
+                                        "_elementImportOfImportedElement": []
+                                    },
+                                    "kerml:resource": "https://18.205.77.131:8111/osmc/resources/64bb1cce-5262-46a0-9240-6cfad9b67d89",
+                                    "kerml:esiID": "b17d016a-8316-40a1-a146-bb5febf4a122",
+                                    "@id": "#b17d016a-8316-40a1-a146-bb5febf4a122"
+                                }
+                            ],
+                            "status": 200
+                        }
+                    },
+                    "52af8392-2b0b-448d-9912-bd4a1a9548b0": {
+                        "46bd53aa-2648-4199-a97c-314a7af34548": {
+                            "name": "46bd53aa-2648-4199-a97c-314a7af34548",
+                            "attributes": "",
+                            "data": [
+                                {
+                                    "ldp:membershipResource": {
+                                        "@id": "#46bd53aa-2648-4199-a97c-314a7af34548"
+                                    },
+                                    "@type": [
+                                        "ldp:DirectContainer",
+                                        "uml:LiteralReal"
+                                    ],
+                                    "ldp:contains": [],
+                                    "ldp:hasMemberRelation": "kerml:ownedElement",
+                                    "@id": "",
+                                    "@context": "https://18.205.77.131:8111/osmc/schemas/umlElementContainer"
+                                },
+                                {
+                                    "kerml:name": "Lat",
+                                    "@base": "https://18.205.77.131:8111/osmc/resources/64bb1cce-5262-46a0-9240-6cfad9b67d89",
+                                    "kerml:nsURI": "http://www.nomagic.com/magicdraw/UML/2.5.1",
+                                    "@type": "uml:LiteralReal",
+                                    "kerml:owner": {
+                                        "@id": "52af8392-2b0b-448d-9912-bd4a1a9548b0"
+                                    },
+                                    "kerml:revision": "https://18.205.77.131:8111/osmc/resources/64bb1cce-5262-46a0-9240-6cfad9b67d89/revisions/38",
+                                    "@context": {
+                                        "kerml": "https://18.205.77.131:8111/osmc/schema/kerml/20140325",
+                                        "uml:LiteralReal": "https://18.205.77.131:8111/osmc/schema/uml/2014345/LiteralReal"
+                                    },
+                                    "kerml:ownedElement": [],
+                                    "kerml:modifiedTime": "20230503194338UTC",
+                                    "kerml:esiData": {
+                                        "owningConstraint": null,
+                                        "_activityEdgeOfWeight": null,
+                                        "_classifierOfInheritedMember": [],
+                                        "_directedRelationshipOfSource": [],
+                                        "_representationText": null,
+                                        "_intervalOfMax": [],
+                                        "_messageOfArgument": null,
+                                        "_considerIgnoreFragmentOfMessage": [],
+                                        "type": null,
+                                        "_interactionConstraintOfMinint": null,
+                                        "_elementOfSyncElement": [],
+                                        "_durationOfExpr": null,
+                                        "owningInstanceSpec": null,
+                                        "_namespaceOfMember": [],
+                                        "_interactionConstraintOfMaxint": null,
+                                        "ID": "_19_0_4_b5902e3_1682202045837_729679_17",
+                                        "_relationshipOfRelatedElement": [],
+                                        "nameExpression": null,
+                                        "owningTemplateParameter": null,
+                                        "_manifestationOfUtilizedElement": [],
+                                        "_interactionUseOfArgument": null,
+                                        "_durationObservationOfEvent": [],
+                                        "visibility": "public",
+                                        "_joinNodeOfJoinSpec": null,
+                                        "_objectNodeOfUpperBound": null,
+                                        "_messageOfSignature": [],
+                                        "_templateParameterSubstitutionOfOwnedActual": null,
+                                        "_componentOfPackagedElement": null,
+                                        "_constraintOfConstrainedElement": [],
+                                        "_namespaceOfImportedMember": [],
+                                        "clientDependency": [],
+                                        "_changeEventOfChangeExpression": null,
+                                        "_diagramOfContext": [],
+                                        "_messageOfTarget": null,
+                                        "name": "Lat",
+                                        "_directedRelationshipOfTarget": [],
+                                        "_commentOfAnnotatedElement": [],
+                                        "supplierDependency": [],
+                                        "_informationFlowOfInformationTarget": [],
+                                        "ownedComment": [],
+                                        "owningUpper": null,
+                                        "_timeObservationOfEvent": [],
+                                        "_lifelineOfSelector": null,
+                                        "_informationFlowOfInformationSource": [],
+                                        "owningParameter": null,
+                                        "_templateParameterOfOwnedDefault": null,
+                                        "templateParameter": null,
+                                        "_timeExpressionOfExpr": null,
+                                        "value": "555.5",
+                                        "_templateParameterOfDefault": [],
+                                        "_valuePinOfValue": null,
+                                        "owner": [
+                                            {
+                                                "@id": "52af8392-2b0b-448d-9912-bd4a1a9548b0"
+                                            }
+                                        ],
+                                        "owningLower": null,
+                                        "_interactionUseOfReturnValue": null,
+                                        "ownedElement": [],
+                                        "visibility__from_PackageableElement": "public",
+                                        "expression": null,
+                                        "owningSlot": {
+                                            "@id": "52af8392-2b0b-448d-9912-bd4a1a9548b0"
+                                        },
+                                        "owningProperty": null,
+                                        "_valueSpecificationActionOfValue": null,
+                                        "syncElement": null,
+                                        "_activityPartitionOfRepresents": [],
+                                        "_elementValueOfElement": [],
+                                        "owningPackage": null,
+                                        "_activityEdgeOfGuard": null,
+                                        "_intervalOfMin": [],
+                                        "namespace": [],
+                                        "mdExtensions": [],
+                                        "appliedStereotypeInstance": null,
+                                        "_templateParameterSubstitutionOfActual": [],
+                                        "_elementImportOfImportedElement": []
+                                    },
+                                    "kerml:resource": "https://18.205.77.131:8111/osmc/resources/64bb1cce-5262-46a0-9240-6cfad9b67d89",
+                                    "kerml:esiID": "46bd53aa-2648-4199-a97c-314a7af34548",
+                                    "@id": "#46bd53aa-2648-4199-a97c-314a7af34548"
+                                }
+                            ],
+                            "status": 200
+                        }
+                    }
+                }
+            }
+        },
+        "3587b960-2844-4264-9274-fa67bdceb211": {
+            "f5d9a392-26c0-4312-a80b-5bdbdb22cc11": {
+                "5a2e956a-8de1-4537-82e1-5ee95409afac": {
+                    "0c417c00-9411-4240-9939-729344ae9ccd": {
+                        "d97a76b6-8fe5-4236-abba-a3897f7c9fbf": {
+                            "523d7892-c9ed-42e7-aee6-7dcb93aed5d5": {
+                                "b3da2680-8a96-40a8-9f4d-99a1bdcd3d28": {
+                                    "e8419072-5be7-4b51-a0d0-4a289c902e50": {
+                                        "name": "e8419072-5be7-4b51-a0d0-4a289c902e50",
+                                        "attributes": "",
+                                        "data": [
+                                            {
+                                                "ldp:membershipResource": {
+                                                    "@id": "#e8419072-5be7-4b51-a0d0-4a289c902e50"
+                                                },
+                                                "@type": [
+                                                    "ldp:DirectContainer",
+                                                    "uml:LiteralString"
+                                                ],
+                                                "ldp:contains": [],
+                                                "ldp:hasMemberRelation": "kerml:ownedElement",
+                                                "@id": "",
+                                                "@context": "https://18.205.77.131:8111/osmc/schemas/umlElementContainer"
+                                            },
+                                            {
+                                                "kerml:name": "",
+                                                "@base": "https://18.205.77.131:8111/osmc/resources/64bb1cce-5262-46a0-9240-6cfad9b67d89",
+                                                "kerml:nsURI": "http://www.nomagic.com/magicdraw/UML/2.5.1",
+                                                "@type": "uml:LiteralString",
+                                                "kerml:owner": {
+                                                    "@id": "b3da2680-8a96-40a8-9f4d-99a1bdcd3d28"
+                                                },
+                                                "kerml:revision": "https://18.205.77.131:8111/osmc/resources/64bb1cce-5262-46a0-9240-6cfad9b67d89/revisions/38",
+                                                "@context": {
+                                                    "kerml": "https://18.205.77.131:8111/osmc/schema/kerml/20140325",
+                                                    "uml:LiteralString": "https://18.205.77.131:8111/osmc/schema/uml/2014345/LiteralString"
+                                                },
+                                                "kerml:ownedElement": [],
+                                                "kerml:modifiedTime": "20230503194338UTC",
+                                                "kerml:esiData": {
+                                                    "owningConstraint": null,
+                                                    "_activityEdgeOfWeight": null,
+                                                    "_classifierOfInheritedMember": [],
+                                                    "_directedRelationshipOfSource": [],
+                                                    "_representationText": null,
+                                                    "_intervalOfMax": [],
+                                                    "_messageOfArgument": null,
+                                                    "_considerIgnoreFragmentOfMessage": [],
+                                                    "type": null,
+                                                    "_interactionConstraintOfMinint": null,
+                                                    "_elementOfSyncElement": [],
+                                                    "_durationOfExpr": null,
+                                                    "owningInstanceSpec": null,
+                                                    "_namespaceOfMember": [],
+                                                    "_interactionConstraintOfMaxint": null,
+                                                    "ID": "_19_0_3_144303c8_1682698069764_368742_16",
+                                                    "_relationshipOfRelatedElement": [],
+                                                    "nameExpression": null,
+                                                    "owningTemplateParameter": null,
+                                                    "_manifestationOfUtilizedElement": [],
+                                                    "_interactionUseOfArgument": null,
+                                                    "_durationObservationOfEvent": [],
+                                                    "visibility": "public",
+                                                    "_joinNodeOfJoinSpec": null,
+                                                    "_objectNodeOfUpperBound": null,
+                                                    "_messageOfSignature": [],
+                                                    "_templateParameterSubstitutionOfOwnedActual": null,
+                                                    "_componentOfPackagedElement": null,
+                                                    "_constraintOfConstrainedElement": [],
+                                                    "_namespaceOfImportedMember": [],
+                                                    "clientDependency": [],
+                                                    "_changeEventOfChangeExpression": null,
+                                                    "_diagramOfContext": [],
+                                                    "_messageOfTarget": null,
+                                                    "name": "",
+                                                    "_directedRelationshipOfTarget": [],
+                                                    "_commentOfAnnotatedElement": [],
+                                                    "supplierDependency": [],
+                                                    "_informationFlowOfInformationTarget": [],
+                                                    "ownedComment": [],
+                                                    "owningUpper": null,
+                                                    "_timeObservationOfEvent": [],
+                                                    "_lifelineOfSelector": null,
+                                                    "_informationFlowOfInformationSource": [],
+                                                    "owningParameter": null,
+                                                    "_templateParameterOfOwnedDefault": null,
+                                                    "templateParameter": null,
+                                                    "_timeExpressionOfExpr": null,
+                                                    "value": "Lets try it remotely",
+                                                    "_templateParameterOfDefault": [],
+                                                    "_valuePinOfValue": null,
+                                                    "owner": [
+                                                        {
+                                                            "@id": "b3da2680-8a96-40a8-9f4d-99a1bdcd3d28"
+                                                        }
+                                                    ],
+                                                    "owningLower": null,
+                                                    "_interactionUseOfReturnValue": null,
+                                                    "ownedElement": [],
+                                                    "visibility__from_PackageableElement": "public",
+                                                    "expression": null,
+                                                    "owningSlot": {
+                                                        "@id": "b3da2680-8a96-40a8-9f4d-99a1bdcd3d28"
+                                                    },
+                                                    "owningProperty": null,
+                                                    "_valueSpecificationActionOfValue": null,
+                                                    "syncElement": null,
+                                                    "_activityPartitionOfRepresents": [],
+                                                    "_elementValueOfElement": [],
+                                                    "owningPackage": null,
+                                                    "_activityEdgeOfGuard": null,
+                                                    "_intervalOfMin": [],
+                                                    "namespace": [],
+                                                    "mdExtensions": [],
+                                                    "appliedStereotypeInstance": null,
+                                                    "_templateParameterSubstitutionOfActual": [],
+                                                    "_elementImportOfImportedElement": []
+                                                },
+                                                "kerml:resource": "https://18.205.77.131:8111/osmc/resources/64bb1cce-5262-46a0-9240-6cfad9b67d89",
+                                                "kerml:esiID": "e8419072-5be7-4b51-a0d0-4a289c902e50",
+                                                "@id": "#e8419072-5be7-4b51-a0d0-4a289c902e50"
+                                            }
+                                        ],
+                                        "status": 200
+                                    }
+                                },
+                                "9bc8bb93-2ce3-4d78-957f-2e4cf3ad4a27": {
+                                    "name": "9bc8bb93-2ce3-4d78-957f-2e4cf3ad4a27",
+                                    "attributes": "",
+                                    "data": [
+                                        {
+                                            "ldp:membershipResource": {
+                                                "@id": "#9bc8bb93-2ce3-4d78-957f-2e4cf3ad4a27"
+                                            },
+                                            "@type": [
+                                                "ldp:DirectContainer",
+                                                "uml:InstanceSpecification"
+                                            ],
+                                            "ldp:contains": [],
+                                            "ldp:hasMemberRelation": "kerml:ownedElement",
+                                            "@id": "",
+                                            "@context": "https://18.205.77.131:8111/osmc/schemas/umlElementContainer"
+                                        },
+                                        {
+                                            "kerml:name": "",
+                                            "@base": "https://18.205.77.131:8111/osmc/resources/64bb1cce-5262-46a0-9240-6cfad9b67d89",
+                                            "kerml:nsURI": "http://www.nomagic.com/magicdraw/UML/2.5.1",
+                                            "@type": "uml:InstanceSpecification",
+                                            "kerml:owner": {
+                                                "@id": "523d7892-c9ed-42e7-aee6-7dcb93aed5d5"
+                                            },
+                                            "kerml:revision": "https://18.205.77.131:8111/osmc/resources/64bb1cce-5262-46a0-9240-6cfad9b67d89/revisions/38",
+                                            "@context": {
+                                                "kerml": "https://18.205.77.131:8111/osmc/schema/kerml/20140325",
+                                                "uml:InstanceSpecification": "https://18.205.77.131:8111/osmc/schema/uml/2014345/InstanceSpecification"
+                                            },
+                                            "kerml:ownedElement": [],
+                                            "kerml:modifiedTime": "20230503194338UTC",
+                                            "kerml:esiData": {
+                                                "_classifierOfInheritedMember": [],
+                                                "_directedRelationshipOfSource": [],
+                                                "_representationText": null,
+                                                "_considerIgnoreFragmentOfMessage": [],
+                                                "_elementOfSyncElement": [],
+                                                "_deploymentOfDeployedArtifact": [],
+                                                "classifier": [
+                                                    {
+                                                        "@id": "116067aa-8dc6-4364-9fb0-bf74e26e4afa"
+                                                    }
+                                                ],
+                                                "_namespaceOfMember": [],
+                                                "ID": "_19_0_4_b5902e3_1682204277234_314165_408",
+                                                "_relationshipOfRelatedElement": [],
+                                                "nameExpression": null,
+                                                "owningTemplateParameter": null,
+                                                "_manifestationOfUtilizedElement": [],
+                                                "_durationObservationOfEvent": [],
+                                                "visibility": null,
+                                                "_messageOfSignature": [],
+                                                "_templateParameterSubstitutionOfOwnedActual": null,
+                                                "_componentOfPackagedElement": null,
+                                                "_constraintOfConstrainedElement": [],
+                                                "_namespaceOfImportedMember": [],
+                                                "clientDependency": [],
+                                                "_diagramOfContext": [],
+                                                "name": "",
+                                                "_directedRelationshipOfTarget": [],
+                                                "_commentOfAnnotatedElement": [],
+                                                "supplierDependency": [],
+                                                "_informationFlowOfInformationTarget": [],
+                                                "ownedComment": [],
+                                                "_timeObservationOfEvent": [],
+                                                "_informationFlowOfInformationSource": [],
+                                                "slot": [],
+                                                "_templateParameterOfOwnedDefault": null,
+                                                "templateParameter": null,
+                                                "_templateParameterOfDefault": [],
+                                                "deployment": [],
+                                                "owner": [
+                                                    {
+                                                        "@id": "523d7892-c9ed-42e7-aee6-7dcb93aed5d5"
+                                                    }
+                                                ],
+                                                "ownedElement": [],
+                                                "visibility__from_PackageableElement": "public",
+                                                "specification": null,
+                                                "syncElement": null,
+                                                "_activityPartitionOfRepresents": [],
+                                                "_elementValueOfElement": [],
+                                                "owningPackage": null,
+                                                "_instanceValueOfInstance": [],
+                                                "stereotypedElement": {
+                                                    "@id": "523d7892-c9ed-42e7-aee6-7dcb93aed5d5"
+                                                },
+                                                "namespace": [],
+                                                "mdExtensions": [],
+                                                "appliedStereotypeInstance": null,
+                                                "_templateParameterSubstitutionOfActual": [],
+                                                "_elementImportOfImportedElement": []
+                                            },
+                                            "kerml:resource": "https://18.205.77.131:8111/osmc/resources/64bb1cce-5262-46a0-9240-6cfad9b67d89",
+                                            "kerml:esiID": "9bc8bb93-2ce3-4d78-957f-2e4cf3ad4a27",
+                                            "@id": "#9bc8bb93-2ce3-4d78-957f-2e4cf3ad4a27"
+                                        }
+                                    ],
+                                    "status": 200
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "e9f82aa9-8a55-4dc1-97b1-1498e58711e4": {
+                "bd43484d-089e-47cb-99c5-a4e1607ca0b4": {
+                    "01beaf0b-b547-47d0-b135-ec1ce9cb2a0d": {
+                        "2a33c70f-26fc-4ee3-b007-48febca842f0": {
+                            "bf6bd7be-37cc-43e8-bfe7-aa1267bc4914": {
+                                "80721473-78d6-476f-a5f1-ca62597097ac": {
+                                    "70cd309b-1ee9-4bb1-b3e2-b08c962b885f": {
+                                        "e3ff9096-f318-4695-a62e-f98f401d07ee": {
+                                            "name": "e3ff9096-f318-4695-a62e-f98f401d07ee",
+                                            "attributes": "",
+                                            "data": [
+                                                {
+                                                    "ldp:membershipResource": {
+                                                        "@id": "#e3ff9096-f318-4695-a62e-f98f401d07ee"
+                                                    },
+                                                    "@type": [
+                                                        "ldp:DirectContainer",
+                                                        "uml:LiteralReal"
+                                                    ],
+                                                    "ldp:contains": [],
+                                                    "ldp:hasMemberRelation": "kerml:ownedElement",
+                                                    "@id": "",
+                                                    "@context": "https://18.205.77.131:8111/osmc/schemas/umlElementContainer"
+                                                },
+                                                {
+                                                    "kerml:name": "maxSpeed",
+                                                    "@base": "https://18.205.77.131:8111/osmc/resources/64bb1cce-5262-46a0-9240-6cfad9b67d89",
+                                                    "kerml:nsURI": "http://www.nomagic.com/magicdraw/UML/2.5.1",
+                                                    "@type": "uml:LiteralReal",
+                                                    "kerml:owner": {
+                                                        "@id": "70cd309b-1ee9-4bb1-b3e2-b08c962b885f"
+                                                    },
+                                                    "kerml:revision": "https://18.205.77.131:8111/osmc/resources/64bb1cce-5262-46a0-9240-6cfad9b67d89/revisions/38",
+                                                    "@context": {
+                                                        "kerml": "https://18.205.77.131:8111/osmc/schema/kerml/20140325",
+                                                        "uml:LiteralReal": "https://18.205.77.131:8111/osmc/schema/uml/2014345/LiteralReal"
+                                                    },
+                                                    "kerml:ownedElement": [],
+                                                    "kerml:modifiedTime": "20230503194338UTC",
+                                                    "kerml:esiData": {
+                                                        "owningConstraint": null,
+                                                        "_activityEdgeOfWeight": null,
+                                                        "_classifierOfInheritedMember": [],
+                                                        "_directedRelationshipOfSource": [],
+                                                        "_representationText": null,
+                                                        "_intervalOfMax": [],
+                                                        "_messageOfArgument": null,
+                                                        "_considerIgnoreFragmentOfMessage": [],
+                                                        "type": null,
+                                                        "_interactionConstraintOfMinint": null,
+                                                        "_elementOfSyncElement": [],
+                                                        "_durationOfExpr": null,
+                                                        "owningInstanceSpec": null,
+                                                        "_namespaceOfMember": [],
+                                                        "_interactionConstraintOfMaxint": null,
+                                                        "ID": "_19_0_4_b5902e3_1682258010477_686571_449",
+                                                        "_relationshipOfRelatedElement": [],
+                                                        "nameExpression": null,
+                                                        "owningTemplateParameter": null,
+                                                        "_manifestationOfUtilizedElement": [],
+                                                        "_interactionUseOfArgument": null,
+                                                        "_durationObservationOfEvent": [],
+                                                        "visibility": "public",
+                                                        "_joinNodeOfJoinSpec": null,
+                                                        "_objectNodeOfUpperBound": null,
+                                                        "_messageOfSignature": [],
+                                                        "_templateParameterSubstitutionOfOwnedActual": null,
+                                                        "_componentOfPackagedElement": null,
+                                                        "_constraintOfConstrainedElement": [],
+                                                        "_namespaceOfImportedMember": [],
+                                                        "clientDependency": [],
+                                                        "_changeEventOfChangeExpression": null,
+                                                        "_diagramOfContext": [],
+                                                        "_messageOfTarget": null,
+                                                        "name": "maxSpeed",
+                                                        "_directedRelationshipOfTarget": [],
+                                                        "_commentOfAnnotatedElement": [],
+                                                        "supplierDependency": [],
+                                                        "_informationFlowOfInformationTarget": [],
+                                                        "ownedComment": [],
+                                                        "owningUpper": null,
+                                                        "_timeObservationOfEvent": [],
+                                                        "_lifelineOfSelector": null,
+                                                        "_informationFlowOfInformationSource": [],
+                                                        "owningParameter": null,
+                                                        "_templateParameterOfOwnedDefault": null,
+                                                        "templateParameter": null,
+                                                        "_timeExpressionOfExpr": null,
+                                                        "value": "1200.0",
+                                                        "_templateParameterOfDefault": [],
+                                                        "_valuePinOfValue": null,
+                                                        "owner": [
+                                                            {
+                                                                "@id": "70cd309b-1ee9-4bb1-b3e2-b08c962b885f"
+                                                            }
+                                                        ],
+                                                        "owningLower": null,
+                                                        "_interactionUseOfReturnValue": null,
+                                                        "ownedElement": [],
+                                                        "visibility__from_PackageableElement": "public",
+                                                        "expression": null,
+                                                        "owningSlot": {
+                                                            "@id": "70cd309b-1ee9-4bb1-b3e2-b08c962b885f"
+                                                        },
+                                                        "owningProperty": null,
+                                                        "_valueSpecificationActionOfValue": null,
+                                                        "syncElement": null,
+                                                        "_activityPartitionOfRepresents": [],
+                                                        "_elementValueOfElement": [],
+                                                        "owningPackage": null,
+                                                        "_activityEdgeOfGuard": null,
+                                                        "_intervalOfMin": [],
+                                                        "namespace": [],
+                                                        "mdExtensions": [],
+                                                        "appliedStereotypeInstance": null,
+                                                        "_templateParameterSubstitutionOfActual": [],
+                                                        "_elementImportOfImportedElement": []
+                                                    },
+                                                    "kerml:resource": "https://18.205.77.131:8111/osmc/resources/64bb1cce-5262-46a0-9240-6cfad9b67d89",
+                                                    "kerml:esiID": "e3ff9096-f318-4695-a62e-f98f401d07ee",
+                                                    "@id": "#e3ff9096-f318-4695-a62e-f98f401d07ee"
+                                                }
+                                            ],
+                                            "status": 200
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
