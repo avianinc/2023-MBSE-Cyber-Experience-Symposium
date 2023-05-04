@@ -3,7 +3,7 @@
 # @Time    : 2021/3/2 10:00
 # @Author  : John_DeHart
 # @Site    : AVIAN Inc.
-# @Software: PyCharm
+# @Software: NA
 # @Code    : TWC API Interactions - Demo
 # @Desc    : Base GUI for TWC API Interactions to support MBSECCES
 """
