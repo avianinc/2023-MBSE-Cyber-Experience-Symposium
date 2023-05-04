@@ -30,9 +30,12 @@ import markdown
 
 class CustomNode(Node):
     # Created to add some additional attributes to the node
-    def __init__(self, name, uuid=None, parent=None):
+    def __init__(self, name, uuid=None, type=None, documentation=None, value=None, parent=None):
         super().__init__(name, parent=parent)
         self.uuid = uuid
+        self.type = type
+        self.value = value
+        self.documentation = documentation
 
 class App:
     # Main application class
@@ -141,8 +144,12 @@ class App:
         self.master.config(menu=self.menu)
         self.file_menu = tk.Menu(self.menu, tearoff=False)
         self.menu.add_cascade(label="File", menu=self.file_menu)
-        self.file_menu.add_command(label="Save", command=self.save)
-        self.file_menu.add_command(label="Load", command=self.load)
+        self.file_menu.add_command(label="Save Server Info", command=self.save)
+        self.file_menu.add_command(label="Load Server Info", command=self.load)
+        self.export_menu = tk.Menu(self.menu, tearoff=False)
+        self.menu.add_cascade(label="Export", menu=self.export_menu)
+        self.export_menu.add_command(label="Export Elements JSON", command=self.save_data)
+        self.export_menu.add_command(label="Export Instance JSON", command=self.export_instance_tree_as_json)
         self.help_menu = tk.Menu(self.menu, tearoff=False)
         self.menu.add_cascade(label="Help", menu=self.help_menu)
         self.help_menu.add_command(label="Documentation", command=self.documentation)
@@ -412,11 +419,24 @@ class App:
         # Create a node object
         node_data = self.data[node_id]['data']  # Get the data of the node
         node_type = node_data[0]['@type'][1]    # Get the type of the node
-        node_name = node_id                     # Set the name of the node to the id of the node
+        node_uuid = node_id                     # Set node uuid to the id of the node 
+
+        # Set node name based on type
+        if node_type == 'uml:InstanceSpecification':
+            node_name = node_data[1]['kerml:name']   # Set the name of the node to the name of the instance
+        elif node_type == 'uml:Slot':
+            # to name a slot you must find the defining feature and use its name
+            slotDefiningFeature = self.data[node_id]['data'][1]['kerml:esiData']['definingFeature']['@id']
+            node_name = self.data[slotDefiningFeature]['data'][1]['kerml:name']
+        elif node_type == 'uml:LiteralString':
+            node_name = 'Value=' + node_data[1]['kerml:value']
 
         # Create a node object
         # Using a CustomNode class to store the node data
-        node = CustomNode(node_name) 
+        try:
+            node = CustomNode(name=node_uuid, type=node_type, uuid='')  # Create a node object 
+        except UnboundLocalError:
+            node = CustomNode("Unknown", "", "")
 
         # Get the name of the node
         owned_elements = self.data[node_id]['data'][1]['kerml:ownedElement'] # Get the owned elements of the node
@@ -523,6 +543,19 @@ class App:
         # Save the data to a JSON file
         with open(filename, "w") as json_file:
             json.dump(tree_data, json_file, ensure_ascii=True, indent=4)
+
+    def save_data(self):
+        # Get the filename to save the JSON file as
+        filename = filedialog.asksaveasfilename(defaultextension='.json', filetypes=[('JSON Files', '*.json')])
+        if not filename:
+            return
+        
+        # Get the data from the instance tree
+        elements_data = self.data
+
+        # Save the data to a JSON file
+        with open(filename, "w") as json_file:
+            json.dump(elements_data, json_file, ensure_ascii=True, indent=4)
 
     def get_tree_data(self, tree, node):
         # Get the data from the tree
