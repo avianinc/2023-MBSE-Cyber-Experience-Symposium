@@ -562,6 +562,18 @@ class App:
         with open(filename, "w") as json_file:
             json.dump(processed_data_B, json_file, ensure_ascii=True, indent=2)
 
+    def is_number(self, string):
+        # Check if the string is a number
+        try:
+            float(string)
+            return True
+        except ValueError:
+            return False
+
+    def is_boolean(self, string):
+        # Check if the string is a boolean
+        return string.lower() in ('true', 'false')
+
     def process_dict(self, d):
         # this function cleans the json data from the treeview removing the instance and name keys
         new_dict = {}
@@ -577,7 +589,6 @@ class App:
         return new_dict
 
     def separate_uuids(self, obj, parent_key=None):
-        # This function separates the uuid from the name in the treeview and adds it to the attributes
         if isinstance(obj, dict):
             new_obj = {}
             for key, value in obj.items():
@@ -585,7 +596,12 @@ class App:
                 if match:
                     new_key, uuid = match.groups()
                     new_value = self.separate_uuids(value, new_key)
-                    item = {"name": new_key, "uuid": uuid, "attributes": new_value}
+                    if self.is_number(new_key):
+                        item = {"value": float(new_key), "uuid": uuid}
+                    elif self.is_boolean(new_key):
+                        item = {"value": new_key.lower() == 'true', "uuid": uuid}
+                    else:
+                        item = {"name": new_key, "uuid": uuid, "attributes": new_value}
                 else:
                     new_key = key
                     new_value = self.separate_uuids(value, parent_key)
@@ -595,7 +611,7 @@ class App:
         elif isinstance(obj, list):
             return [self.separate_uuids(item, parent_key) for item in obj]
         else:
-            return obj    
+            return obj
 
     def save_data(self):
         # Get the filename to save the JSON file as
