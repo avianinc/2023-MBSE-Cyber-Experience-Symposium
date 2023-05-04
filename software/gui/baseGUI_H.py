@@ -421,6 +421,8 @@ class App:
             self.instance_tree.delete(item)
     
     def create_tree(self, node_id):
+        # Recursively create a tree of nodes from the given node ID
+
         # Create a node object
         node_data = self.data[node_id]['data']  # Get the data of the node
         node_type = node_data[0]['@type'][1]    # Get the type of the node
@@ -466,8 +468,10 @@ class App:
     
         return node # Return the node
     
-    # The function to insert nodes into the Treeview
     def insert_treeview_nodes(self, treeview, parent, tree_node):
+        # The function to insert nodes into the Treeview widget
+
+        # Insert the node into the treeview
         treeview_node = treeview.insert(parent, 'end', text=tree_node.name) # Insert the node into the treeview
 
         # Insert the children of the node into the treeview    
@@ -493,7 +497,7 @@ class App:
             self.data_text.delete(1.0, tk.END)  # Clear the text box
 
     def save(self):
-        # Get the data from the entries
+        # Get the working data from the entries
         data = {
             "Server IP": self.server_ip_entry.get(),
             "Server Port": self.server_port_entry.get(),
@@ -511,7 +515,7 @@ class App:
                     f.write(f"{key}: {value}\n")
     
     def load(self):
-        # Load the data from a file
+        # Load the server data from a file
         file_path = filedialog.askopenfilename(defaultextension=".txt")
         if file_path:
             with open(file_path, "r") as f:
@@ -589,14 +593,15 @@ class App:
         return new_dict
 
     def separate_uuids(self, obj, parent_key=None):
+        # this function separates the uuids from the attributes and returns a list of dictionaries with the uuids and values 
         if isinstance(obj, dict):
             new_obj = {}
             for key, value in obj.items():
-                match = re.match(r'^(.*?) \((.*?)\)$', key)
+                match = re.match(r'^(.*?) \((.*?)\)$', key) # this regex matches the uuids
                 if match:
                     new_key, uuid = match.groups()
                     new_value = self.separate_uuids(value, new_key)
-                    if self.is_number(new_key):
+                    if self.is_number(new_key): #
                         item = {"value": float(new_key), "uuid": uuid}
                     elif self.is_boolean(new_key):
                         item = {"value": new_key.lower() == 'true', "uuid": uuid}
@@ -604,12 +609,12 @@ class App:
                         item = {"name": new_key, "uuid": uuid, "attributes": new_value}
                 else:
                     new_key = key
-                    new_value = self.separate_uuids(value, parent_key)
-                    item = {"name": new_key, "attributes": new_value}
-                new_obj[new_key] = item
+                    new_value = self.separate_uuids(value, parent_key) # this is to keep the parent key
+                    item = {"name": new_key, "attributes": new_value} 
+                new_obj[new_key] = item 
             return new_obj
         elif isinstance(obj, list):
-            return [self.separate_uuids(item, parent_key) for item in obj]
+            return [self.separate_uuids(item, parent_key) for item in obj] 
         else:
             return obj
 
