@@ -566,17 +566,20 @@ class App:
         with open(filename, "w") as json_file:
             json.dump(processed_data_B, json_file, ensure_ascii=True, indent=2)
 
-    def is_boolean(string):
+    def is_boolean(self, string):
+        # checks if a string is a boolean
         return string.lower() in ('true', 'false')
 
-    def is_float(string):
+    def is_float(self, string):
+        # checks if a string is a float
         try:
             float(string)
             return '.' in string
         except ValueError:
             return False
 
-    def is_int(string):
+    def is_int(self, string):
+        # checks if a string is an integer
         try:
             int(string)
             return True
@@ -605,7 +608,11 @@ class App:
                 if match:
                     new_key, uuid = match.groups()
                     new_value = self.separate_uuids(value, new_key)
-                    if self.is_int(new_key):
+                    if new_key == "Comment":
+                        node_data = self.data[uuid]['data']  # Get the data of the node
+                        body = node_data[1]['kerml:esiData']['body']
+                        item = {"name": new_key, "uuid": uuid, "attributes": new_value, "body": body}
+                    elif self.is_int(new_key):
                         item = {"value": int(new_key), "uuid": uuid}
                         new_key = "Integer"
                     elif self.is_float(new_key):
@@ -626,7 +633,7 @@ class App:
             return [self.separate_uuids(item, parent_key) for item in obj]
         else:
             return obj
-    
+
     def save_data(self):
         # Get the filename to save the JSON file as
         filename = filedialog.asksaveasfilename(defaultextension='.json', filetypes=[('JSON Files', '*.json')])

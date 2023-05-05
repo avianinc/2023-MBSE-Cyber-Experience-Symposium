@@ -20,7 +20,7 @@
                 "name": "locX",
                 "uuid": "df4339f7-c025-4f4c-b0e0-79ba6d315eed",
                 "attributes": {
-                  "9999.0": {
+                  "Float": {
                     "value": 9999.0,
                     "uuid": "abba92f6-b3ea-4134-b55e-448d5dcde3fd"
                   }
@@ -30,7 +30,7 @@
                 "name": "remoteType",
                 "uuid": "a9245340-2112-48e6-a74d-4011823cf73a",
                 "attributes": {
-                  "true": {
+                  "Boolean": {
                     "value": true,
                     "uuid": "d1604321-b0c5-4d4d-80c3-6fcea5a56b4f"
                   }
@@ -48,7 +48,7 @@
                         "name": "chargeRate",
                         "uuid": "dc0f327c-e238-4e73-9f1f-707eb614bbf8",
                         "attributes": {
-                          "1200.0": {
+                          "Float": {
                             "value": 1200.0,
                             "uuid": "b65d29f8-97f9-499e-892d-91530baaf298"
                           }
@@ -62,7 +62,7 @@
                 "name": "locY",
                 "uuid": "a3a50277-03fe-4deb-a0e7-f7560b43408b",
                 "attributes": {
-                  "5.0": {
+                  "Float": {
                     "value": 5.0,
                     "uuid": "ba417033-a34a-47ed-925e-cc8e169a9816"
                   }
@@ -72,8 +72,8 @@
                 "name": "medCount",
                 "uuid": "da4010df-acc6-4c6a-8b10-6bc23ec16711",
                 "attributes": {
-                  "99": {
-                    "value": 99.0,
+                  "Integer": {
+                    "value": 99,
                     "uuid": "6bd7e4fe-ed85-4b60-9a12-8dc87e8f1e34"
                   }
                 }
@@ -96,7 +96,7 @@
                         "name": "chargeRate",
                         "uuid": "6a9d1885-488d-4a69-a695-9f3e16f71c12",
                         "attributes": {
-                          "400.0": {
+                          "Float": {
                             "value": 400.0,
                             "uuid": "75254ddd-0372-4679-94eb-ea3a99d0dd6c"
                           }
@@ -110,7 +110,7 @@
                 "name": "locY",
                 "uuid": "c7449010-a231-485d-82c6-0bf30d3132f1",
                 "attributes": {
-                  "18.0": {
+                  "Float": {
                     "value": 18.0,
                     "uuid": "382c79a1-d9c2-4679-ba9c-7ac05c84ee6d"
                   }
@@ -120,7 +120,7 @@
                 "name": "remoteType",
                 "uuid": "8d27b53e-12b1-45db-8b5c-43e205f5b5c9",
                 "attributes": {
-                  "true": {
+                  "Boolean": {
                     "value": true,
                     "uuid": "a598b26a-f029-4942-9bb1-b5def108f773"
                   }
@@ -130,7 +130,7 @@
                 "name": "locX",
                 "uuid": "fc58a6aa-8775-4d99-aa13-aa683657c928",
                 "attributes": {
-                  "25.0": {
+                  "Float": {
                     "value": 25.0,
                     "uuid": "d8402c1e-928d-47ca-bf66-2f091667fed4"
                   }
@@ -140,8 +140,8 @@
                 "name": "medCount",
                 "uuid": "071cb4e5-b8db-4d00-9813-abd2135d3355",
                 "attributes": {
-                  "3": {
-                    "value": 3.0,
+                  "Integer": {
+                    "value": 3,
                     "uuid": "32f9e36c-77cc-417e-a20b-0154ce7755da"
                   }
                 }
@@ -156,7 +156,7 @@
                 "name": "locY",
                 "uuid": "aeb4a4aa-5149-418a-af98-03417ebfda84",
                 "attributes": {
-                  "17.0": {
+                  "Float": {
                     "value": 17.0,
                     "uuid": "91c8f02f-d93c-4065-892d-706a3f9919c8"
                   }
@@ -166,7 +166,7 @@
                 "name": "remoteType",
                 "uuid": "1c9da6c7-1e0a-4591-978e-6bd426377c58",
                 "attributes": {
-                  "true": {
+                  "Boolean": {
                     "value": true,
                     "uuid": "31178af6-36c2-45cb-b254-3bf9c9e7a530"
                   }
@@ -176,31 +176,9 @@
                 "name": "locX",
                 "uuid": "43379bdd-0b3b-4a76-87b2-eeb54bdb48e7",
                 "attributes": {
-                  "32.0": {
+                  "Float": {
                     "value": 32.0,
                     "uuid": "f7d99432-2188-42d4-a6f4-be8b19dfb8a0"
-                  }
-                }
-              },
-              "charging System": {
-                "name": "charging System",
-                "uuid": "79728c1b-08ff-4163-bb78-5d032c0e4de2",
-                "attributes": {
-                  "charging System - SuperLite": {
-                    "name": "charging System - SuperLite",
-                    "uuid": "5c9f6a1f-55ad-48eb-a39a-6346820d3799",
-                    "attributes": {
-                      "chargeRate": {
-                        "name": "chargeRate",
-                        "uuid": "819507d6-b27e-480d-bf6b-1ee75e490247",
-                        "attributes": {
-                          "999.0": {
-                            "value": 999.0,
-                            "uuid": "98e074fd-073c-4901-bc20-e2698ba80cbc"
-                          }
-                        }
-                      }
-                    }
                   }
                 }
               },
@@ -208,8 +186,8 @@
                 "name": "medCount",
                 "uuid": "6d471ba4-15fa-4bd6-96f6-5ce2754cc422",
                 "attributes": {
-                  "12": {
-                    "value": 12.0,
+                  "Integer": {
+                    "value": 12,
                     "uuid": "4dbc68ce-5368-4450-8c85-274dfec67a25"
                   }
                 }
@@ -230,7 +208,7 @@
                 "name": "range",
                 "uuid": "78a2bafd-d344-4451-a0c1-a82e1f8e5eb2",
                 "attributes": {
-                  "100.0": {
+                  "Float": {
                     "value": 100.0,
                     "uuid": "52d3a73d-8cb1-42e2-baaf-60e774079b12"
                   }
@@ -240,7 +218,7 @@
                 "name": "cargoCapacity",
                 "uuid": "eebbeeca-dbb2-4737-b595-3d6df5629392",
                 "attributes": {
-                  "5.0": {
+                  "Float": {
                     "value": 5.0,
                     "uuid": "b30fbd3b-6c27-4ca3-9357-3d0a3ca4b56d"
                   }
@@ -250,7 +228,7 @@
                 "name": "speed",
                 "uuid": "2d8a427f-cd8a-4db9-9a3a-c3e442d75c5e",
                 "attributes": {
-                  "25.0": {
+                  "Float": {
                     "value": 25.0,
                     "uuid": "e6dd7118-7b0c-41c2-ae6e-46799bec737b"
                   }
@@ -266,7 +244,7 @@
                 "name": "speed",
                 "uuid": "82cf332d-8446-400d-945e-4d4f5cf5c5e5",
                 "attributes": {
-                  "125.0": {
+                  "Float": {
                     "value": 125.0,
                     "uuid": "2d49f46a-7bf0-479f-a333-bd5583d67912"
                   }
@@ -276,7 +254,7 @@
                 "name": "cargoCapacity",
                 "uuid": "c9aaf871-53dc-4a66-b622-7708fb528d7b",
                 "attributes": {
-                  "50.0": {
+                  "Float": {
                     "value": 50.0,
                     "uuid": "7c294e51-9ffb-4197-adea-62e305b8be6e"
                   }
@@ -286,7 +264,7 @@
                 "name": "range",
                 "uuid": "f41f0ef8-5160-4fe4-b033-c658c16b9466",
                 "attributes": {
-                  "250.0": {
+                  "Float": {
                     "value": 250.0,
                     "uuid": "738fd415-1f9c-434a-8466-b388367d4c09"
                   }
@@ -302,8 +280,8 @@
                 "name": "speed",
                 "uuid": "13e9fe73-6fcd-4aec-aacc-16a172f2732d",
                 "attributes": {
-                  "55.01": {
-                    "value": 55.01,
+                  "Float": {
+                    "value": 50.0,
                     "uuid": "ec836feb-6f63-4e21-b12d-7d0734f12744"
                   }
                 }
@@ -312,7 +290,7 @@
                 "name": "cargoCapacity",
                 "uuid": "4070eef8-ff7d-442a-869e-f55824a496dd",
                 "attributes": {
-                  "20.0": {
+                  "Float": {
                     "value": 20.0,
                     "uuid": "0450478c-138c-4c63-ad27-138a165b34ba"
                   }
@@ -322,7 +300,7 @@
                 "name": "range",
                 "uuid": "1c255ba4-4894-47d3-bfbc-18e7f6a0b4e1",
                 "attributes": {
-                  "150.0": {
+                  "Float": {
                     "value": 150.0,
                     "uuid": "41a0959f-7f07-41db-a5f5-2ba010242703"
                   }

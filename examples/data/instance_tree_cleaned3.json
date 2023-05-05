@@ -6,7 +6,8 @@
       "Comment": {
         "name": "Comment",
         "uuid": "d4ad90e0-1c48-451a-9c63-835cdbf6a356",
-        "attributes": {}
+        "attributes": {},
+        "body": "Rural Medical Support System"
       },
       "hospital": {
         "name": "hospital",
@@ -57,6 +58,12 @@
                     }
                   }
                 }
+              },
+              "Comment": {
+                "name": "Comment",
+                "uuid": "90aa25f9-e389-4e1b-98e4-ac6889edf71c",
+                "attributes": {},
+                "body": "Hospital A is a rural hospital that sits many miles away from the city."
               },
               "locY": {
                 "name": "locY",
