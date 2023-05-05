@@ -547,8 +547,14 @@ class App:
             tk.messagebox.showerror("Error", "Documentation file not found.")
     
     def about(self):
-        # Show the about message
-        tk.messagebox.showinfo("About", "My App v1.0")
+        title = "TWC API Interactions - Demo v0.0"
+        company = "Company: AVIAN Inc. - (http://www.avian.com)"
+        author = "Author: J.K. DeHart"
+        email = "Email: jdehart@avian.com"
+        github = "Github: https://github.com/avianinc/2023-MBSE-Cyber-Experience-Symposium"
+        summary = "This program demonstrates interactions with the TWC API to help present the complexitites withing digital thread hidden behind the drawing of arrows."
+        message = f"{title}\n\n{company}\n{author}\n{email}\n{github}\n\n{summary}"
+        tk.messagebox.showinfo("About", message)
 
     def export_instance_tree_as_json(self):
         # Get the filename to save the JSON file as
