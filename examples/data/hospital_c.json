@@ -1,0 +1,70 @@
+{
+  "hospital_c": {
+    "name": "hospital_c",
+    "uuid": "ba0a3495-a723-49fa-b8d7-ba3cf4afa348",
+    "attributes": {
+      "locY": {
+        "name": "locY",
+        "uuid": "aeb4a4aa-5149-418a-af98-03417ebfda84",
+        "attributes": {
+          "17.0": {
+            "value": 17.0,
+            "uuid": "91c8f02f-d93c-4065-892d-706a3f9919c8"
+          }
+        }
+      },
+      "remoteType": {
+        "name": "remoteType",
+        "uuid": "1c9da6c7-1e0a-4591-978e-6bd426377c58",
+        "attributes": {
+          "true": {
+            "value": true,
+            "uuid": "31178af6-36c2-45cb-b254-3bf9c9e7a530"
+          }
+        }
+      },
+      "locX": {
+        "name": "locX",
+        "uuid": "43379bdd-0b3b-4a76-87b2-eeb54bdb48e7",
+        "attributes": {
+          "32.0": {
+            "value": 32.0,
+            "uuid": "f7d99432-2188-42d4-a6f4-be8b19dfb8a0"
+          }
+        }
+      },
+      "charging System": {
+        "name": "charging System",
+        "uuid": "79728c1b-08ff-4163-bb78-5d032c0e4de2",
+        "attributes": {
+          "charging System - SuperLite": {
+            "name": "charging System - SuperLite",
+            "uuid": "5c9f6a1f-55ad-48eb-a39a-6346820d3799",
+            "attributes": {
+              "chargeRate": {
+                "name": "chargeRate",
+                "uuid": "819507d6-b27e-480d-bf6b-1ee75e490247",
+                "attributes": {
+                  "999.0": {
+                    "value": 999.0,
+                    "uuid": "98e074fd-073c-4901-bc20-e2698ba80cbc"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "medCount": {
+        "name": "medCount",
+        "uuid": "6d471ba4-15fa-4bd6-96f6-5ce2754cc422",
+        "attributes": {
+          "12": {
+            "value": 12.0,
+            "uuid": "4dbc68ce-5368-4450-8c85-274dfec67a25"
+          }
+        }
+      }
+    }
+  }
+}
