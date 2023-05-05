@@ -1,0 +1,194 @@
+{
+  "rmss_C": {
+    "name": "rmss_C",
+    "uuid": "43c2b4f3-c12e-4772-bcf1-2c7a4c9398df",
+    "attributes": {
+      "hospital": {
+        "name": "hospital",
+        "uuid": "f67c30e0-981e-4da2-81a3-cfa6afd93edb",
+        "attributes": {
+          "hospital": {
+            "name": "hospital",
+            "uuid": "ebda3a9b-dfb0-4705-9754-c08359cd4e51",
+            "attributes": {
+              "remoteType": {
+                "name": "remoteType",
+                "uuid": "44454f89-2f91-4795-ba26-cdd7dd466824",
+                "attributes": {
+                  "parameter": {
+                    "value": true,
+                    "uuid": "db33aa9b-dda3-4d77-916d-9ca454d0a3c9",
+                    "type": "boolean"
+                  }
+                }
+              },
+              "locX": {
+                "name": "locX",
+                "uuid": "bd44a44c-dd39-4408-894c-a6c286c8e0e2",
+                "attributes": {
+                  "parameter": {
+                    "value": 0.0,
+                    "uuid": "edd9d100-6fd6-40e7-8cd1-2f26fc2825ac",
+                    "type:": "float"
+                  }
+                }
+              },
+              "locY": {
+                "name": "locY",
+                "uuid": "a2bc4728-142e-4fdb-a589-eda61fa1b533",
+                "attributes": {
+                  "parameter": {
+                    "value": 0.0,
+                    "uuid": "6f3ea179-1ee1-4c72-8663-5b31b088cf56",
+                    "type:": "float"
+                  }
+                }
+              },
+              "medCount": {
+                "name": "medCount",
+                "uuid": "734d35c6-ed11-44d5-969e-6664ad3f1f2c",
+                "attributes": {
+                  "parameter": {
+                    "value": 0,
+                    "uuid": "4c063560-8d78-4c0d-b7c0-c680101e3976",
+                    "type:": "integer"
+                  }
+                }
+              }
+            }
+          },
+          "hospital1": {
+            "name": "hospital1",
+            "uuid": "da122ae5-5d41-4643-8b2c-2bd8dd8b6531",
+            "attributes": {
+              "locY": {
+                "name": "locY",
+                "uuid": "edd4d2c0-9fa6-41e7-803c-017d12c112b6",
+                "attributes": {
+                  "parameter": {
+                    "value": 0.0,
+                    "uuid": "10942135-8166-4ff0-b693-85fe9c7c1fcd",
+                    "type:": "float"
+                  }
+                }
+              },
+              "remoteType": {
+                "name": "remoteType",
+                "uuid": "52d01f67-059c-4d42-8b3a-2f61ffbc3727",
+                "attributes": {
+                  "parameter": {
+                    "value": false,
+                    "uuid": "186bd31b-f93a-40c5-9992-2ef27e898985",
+                    "type": "boolean"
+                  }
+                }
+              },
+              "medCount": {
+                "name": "medCount",
+                "uuid": "ab745d62-bee2-40c0-918d-6ca47852c682",
+                "attributes": {
+                  "parameter": {
+                    "value": 0,
+                    "uuid": "b94bb141-09a3-45ed-baa2-11c2909bfb45",
+                    "type:": "integer"
+                  }
+                }
+              },
+              "locX": {
+                "name": "locX",
+                "uuid": "b83985f6-1f51-4b18-8bca-2be1dae7e104",
+                "attributes": {
+                  "parameter": {
+                    "value": 0.0,
+                    "uuid": "ef236de7-1c1d-4e74-96ea-d393f858a454",
+                    "type:": "float"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "": {
+        "name": "",
+        "uuid": "176d2a96-1d1a-4ee1-804d-b5f591d9ef46",
+        "attributes": {
+          "emergencyResponseTime": {
+            "name": "emergencyResponseTime",
+            "uuid": "363b5d06-9937-4b19-be8b-ed4ac559a223",
+            "attributes": {
+              "parameter": {
+                "value": 50.0,
+                "uuid": "292b8691-c6b5-4a4f-9043-1058ef7d3baa",
+                "type:": "float"
+              }
+            }
+          },
+          "standardResponseTime": {
+            "name": "standardResponseTime",
+            "uuid": "450ed7b9-0651-4715-897c-80add27516aa",
+            "attributes": {
+              "parameter": {
+                "value": 60.0,
+                "uuid": "7f99e180-94e8-4fb2-99cd-f9e05c367943",
+                "type:": "float"
+              }
+            }
+          }
+        }
+      },
+      "Comment": {
+        "name": "Comment",
+        "uuid": "d7abf4ff-eb53-42df-a6ef-9ee8d1a83530",
+        "attributes": {
+          "body": "This is a test"
+        }
+      },
+      "drone": {
+        "name": "drone",
+        "uuid": "ec65cbd0-b61e-4951-bb08-2d1503154dec",
+        "attributes": {
+          "drone": {
+            "name": "drone",
+            "uuid": "f02a7c82-75cf-45c9-8a24-9d624fb5d225",
+            "attributes": {
+              "cargoCapacity": {
+                "name": "cargoCapacity",
+                "uuid": "2c7cc835-f0ac-46a7-81f6-8c8575a2dee7",
+                "attributes": {
+                  "parameter": {
+                    "value": 5.0,
+                    "uuid": "c52348b8-9958-400e-87f1-26839b419d5c",
+                    "type:": "float"
+                  }
+                }
+              },
+              "range": {
+                "name": "range",
+                "uuid": "ff3c9063-a213-442b-9a56-64c1bbe95961",
+                "attributes": {
+                  "parameter": {
+                    "value": 50.0,
+                    "uuid": "d739b104-1512-4179-a6b7-1c50fa019f06",
+                    "type:": "float"
+                  }
+                }
+              },
+              "speed": {
+                "name": "speed",
+                "uuid": "68174618-8769-4973-ad1e-68e68d66106f",
+                "attributes": {
+                  "parameter": {
+                    "value": 60.0,
+                    "uuid": "557b9c42-62bd-42a3-8030-f7751a170e4b",
+                    "type:": "float"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
