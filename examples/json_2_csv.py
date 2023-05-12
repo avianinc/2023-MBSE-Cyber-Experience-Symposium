@@ -1,37 +1,56 @@
 import json
-import csv
+import pandas as pd
+
+filename = './software/models/rmss_c.json'
 
 # Read the JSON file
-with open('./examples/data/rmss_b1.json', 'r') as f:
+with open(filename, 'r') as f:
     data = json.load(f)
 
-# Define a recursive function to extract the headers and data
-def _recursive_extract(item, row, header_set):
-    if isinstance(item, dict):
-        for k, v in item.items():
-            if isinstance(v, (dict, list)):
-                _recursive_extract(v, row, header_set)
-            else:
-                if k not in header_set:
-                    header_set.add(k)
-                row.append(v)
-        return row
-    elif isinstance(item, list):
-        for i in item:
-            _recursive_extract(i, row, header_set)
-        return row
+# Get the first key in the dictionary, which is the model name
+model_name = list(data.keys())[0]
 
-# Extract the header and data
-header_set = set()
-rows = []
-for item in data:
-    row = _recursive_extract(item, [], header_set)
-    rows.append(row)
+# Parse rmss_C data
+model_data = data[model_name]["attributes"]
 
-header = sorted(list(header_set))
-rows.insert(0, header)
+# Dynamically build the model dictionary
+model = {'Model': model_name}
+for attribute_name, attribute_value in model_data['']['attributes'].items():
+    model[attribute_name] = attribute_value["attributes"]['parameter']['value']
 
-# Write the CSV file
-with open('./examples/data/rmss_b1.csv', 'w', newline='') as f:
-    writer = csv.writer(f)
-    writer.writerows(rows)
+# Im cheating here... this should be dynamic but Im out of time :(
+
+# Parse hospitals data
+hospitals_data = model_data['hospital']['attributes']
+hospital_rows = []
+for hospital_name in hospitals_data.keys():
+    row = {
+        'hospitalName': hospital_name,
+        'remoteType': hospitals_data[hospital_name]['attributes']['remoteType']['attributes']['parameter']['value'],
+        'locX': hospitals_data[hospital_name]['attributes']['locX']['attributes']['parameter']['value'],
+        'locY': hospitals_data[hospital_name]['attributes']['locY']['attributes']['parameter']['value'],
+        'medCount': hospitals_data[hospital_name]['attributes']['medCount']['attributes']['parameter']['value']
+    }
+    hospital_rows.append(row)
+
+# Parse drone data
+drone_data = model_data['drone']['attributes']
+drones_rows = []
+for drone_name in drone_data.keys():
+    row = {
+        'droneName': drone_name,
+        'flightRange': drone_data[drone_name]['attributes']['flightRange']['attributes']['parameter']['value'],
+        'cargoCapacity': drone_data[drone_name]['attributes']['cargoCapacity']['attributes']['parameter']['value'],
+        'speed': drone_data[drone_name]['attributes']['speed']['attributes']['parameter']['value']
+    }
+    drones_rows.append(row)
+
+# # # Create DataFrames
+model_df = pd.DataFrame([model])
+hospitals_df = pd.DataFrame(hospital_rows)
+drone_df = pd.DataFrame(drones_rows)
+
+# # # Save DataFrames to CSV files
+model_df.to_csv('./software/models/model_data.csv', index=False)
+hospitals_df.to_csv('./software/models/hospital_data.csv', index=False)
+drone_df.to_csv('./software/models/drone_data.csv', index=False)

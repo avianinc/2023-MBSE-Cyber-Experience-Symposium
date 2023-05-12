@@ -1,0 +1,4 @@
+droneName,flightRange,cargoCapacity,speed
+drone_lite,50.0,5.0,60.0
+drone_heavy,150.0,75.0,120.0
+drone_medium,75.0,15.0,85.0

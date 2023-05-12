@@ -1,45 +1,68 @@
-extensions [json file]
+extensions [csv]
 
-globals [data]
+globals [
+  drone-data
+  hospital-data
+  model-data
+]
 
 to setup
   clear-all
-  load-data
-  create-turtles-from-data
+  load-drone-data
+  load-hospital-data
+  load-model-data
+  create-drones
+  create-hospitals
   reset-ticks
 end
 
-to load-data
-  let file-path ".json"
-  file-open file-path
-  let raw-json file-read
+to load-drone-data
+  set drone-data []
+  file-open "drone_data.csv"
+  while [not file-at-end?]
+  [
+    let row csv:from-row file-read-line
+    set drone-data lput (list (item 0 row) (item 1 row) (item 2 row) (item 3 row)) drone-data
+  ]
   file-close
-  set data json:from-string raw-json
 end
 
-to create-turtles-from-data
-  foreach data [
-    [entry] ->
-    create-turtles 1 [
-      set color item 0 entry
-      set xcor item 1 entry
-      set ycor item 2 entry
+
+
+to load-model-data
+  set model-data []
+  file-open "model_data.csv"
+  while [not file-at-end?]
+  [
+    let row csv:from-row file-read-line
+    set model-data lput (list (item 0 row) (item 1 row) (item 2 row)) model-data
+  ]
+  file-close
+end
+
+to create-drones
+  foreach drone-data [
+    row ->
+    crt 1 [
+      set shape "airplane"
+      set color blue
+      set label item 0 row
+      set size 1.5
     ]
   ]
 end
 
-to go
-  if all? turtles [color = red] [
-    stop
-  ]
-  ask turtles [
-    rt random 360
-    fd 1
-    if pcolor = red [
+to create-hospitals
+  foreach hospital-data [
+    row ->
+    crt 1 [
+      set shape "house"
+      setxy item 2 row item 3 row
       set color red
+      set label item 0 row
+      set size 2
     ]
   ]
-  tick
 end
 @#$#@#$#@
 GRAPHICS-WINDOW
@@ -68,6 +91,23 @@ GRAPHICS-WINDOW
 1
 ticks
 30.0
+
+BUTTON
+57
+53
+121
+86
+Setup
+setup
+NIL
+1
+T
+OBSERVER
+NIL
+NIL
+NIL
+NIL
+1
 
 @#$#@#$#@
 ## WHAT IS IT?

@@ -1,0 +1,3 @@
+hospitalName,remoteType,locX,locY,medCount
+hospital,False,0.0,0.0,999
+hospital1,True,5.0,12.0,25

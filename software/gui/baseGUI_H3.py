@@ -150,6 +150,7 @@ class App:
         self.menu.add_cascade(label="Export", menu=self.export_menu)
         self.export_menu.add_command(label="Export Model Elements", command=self.save_data)
         self.export_menu.add_command(label="Export Instance Tree", command=self.export_instance_tree_as_json)
+        self.export_menu.add_command(label="Export RMSS .csv - Hack :(", command=self.export_rmss)
         self.help_menu = tk.Menu(self.menu, tearoff=False)
         self.menu.add_cascade(label="Help", menu=self.help_menu)
         self.help_menu.add_command(label="Documentation", command=self.documentation)
@@ -184,6 +185,8 @@ class App:
         # Export Button
         #self.export_button = tk.Button(self.button_frame, text="Export Tree as JSON", command=self.export_instance_tree_as_json)
         #self.export_button.pack()
+    def export_rmss():
+        print("")
 
     def on_treeview_double_click(self, event):
         item = self.instance_tree.selection()[0]
