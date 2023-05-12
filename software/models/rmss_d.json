@@ -1,0 +1,265 @@
+{
+  "rmss_D": {
+    "name": "rmss_D",
+    "uuid": "2766a006-aa02-405e-90ff-be96505d96dc",
+    "attributes": {
+      "": {
+        "name": "",
+        "uuid": "b5c4234d-ea30-45b1-9d6d-050a4c2a437f",
+        "attributes": {
+          "standardResponseTime": {
+            "name": "standardResponseTime",
+            "uuid": "e80b6338-7111-4e78-b7a0-0961c626077e",
+            "attributes": {
+              "parameter": {
+                "value": 20.0,
+                "uuid": "9fea3d61-05f0-45b4-9de5-3be78920204f",
+                "type:": "float"
+              }
+            }
+          },
+          "emergencyResponseTime": {
+            "name": "emergencyResponseTime",
+            "uuid": "949e17ed-8d5b-43df-ad6b-8671a2009292",
+            "attributes": {
+              "parameter": {
+                "value": 50.0,
+                "uuid": "74f215de-db1d-4e7f-8de0-2e2462eee2cb",
+                "type:": "float"
+              }
+            }
+          }
+        }
+      },
+      "drone": {
+        "name": "drone",
+        "uuid": "68a47685-db47-4b5e-9766-0096e1735a7c",
+        "attributes": {
+          "drone_lite": {
+            "name": "drone_lite",
+            "uuid": "3e5eb1ce-5160-4a44-985b-95f53fe87901",
+            "attributes": {
+              "flightRange": {
+                "name": "flightRange",
+                "uuid": "d2ffbeab-f727-4ca1-9b1c-19fed2e9a89e",
+                "attributes": {
+                  "parameter": {
+                    "value": 12.0,
+                    "uuid": "3ffa9495-3d25-409f-8332-e34e461d92ff",
+                    "type:": "float"
+                  }
+                }
+              },
+              "cargoCapacity": {
+                "name": "cargoCapacity",
+                "uuid": "d0b3de47-c81f-4e2f-bf08-bfbb199cd5f8",
+                "attributes": {
+                  "parameter": {
+                    "value": 12.0,
+                    "uuid": "ce18dc9d-15c8-4cc5-b9c2-c706ed7adb0b",
+                    "type:": "float"
+                  }
+                }
+              },
+              "speed": {
+                "name": "speed",
+                "uuid": "0ad81afc-b136-4701-ab61-badc45fe86aa",
+                "attributes": {
+                  "parameter": {
+                    "value": 5.0,
+                    "uuid": "66de204f-597d-44b1-a243-9f5f670e3b35",
+                    "type:": "float"
+                  }
+                }
+              }
+            }
+          },
+          "drone_heavy": {
+            "name": "drone_heavy",
+            "uuid": "01c66106-9d00-4c88-a91c-8ab0fe87a045",
+            "attributes": {
+              "speed": {
+                "name": "speed",
+                "uuid": "6b1a6f19-ab81-4c21-aeac-d3d31c97f33d",
+                "attributes": {
+                  "parameter": {
+                    "value": 120.0,
+                    "uuid": "0c862f42-da13-499a-a937-d39c84b4b924",
+                    "type:": "float"
+                  }
+                }
+              },
+              "cargoCapacity": {
+                "name": "cargoCapacity",
+                "uuid": "b73e8193-b267-48de-be48-6546dd013431",
+                "attributes": {
+                  "parameter": {
+                    "value": 120.0,
+                    "uuid": "4f265e2d-f6b8-4dce-831b-9cb048968654",
+                    "type:": "float"
+                  }
+                }
+              },
+              "flightRange": {
+                "name": "flightRange",
+                "uuid": "16a3403f-cec7-4784-b3b7-d62ea094b160",
+                "attributes": {
+                  "parameter": {
+                    "value": 0.0,
+                    "uuid": "5993d825-2f97-4546-82fb-77581b2e13f2",
+                    "type:": "float"
+                  }
+                }
+              }
+            }
+          },
+          "drone_medium": {
+            "name": "drone_medium",
+            "uuid": "9bd2ed67-b3b9-4427-bb65-307882097fae",
+            "attributes": {
+              "cargoCapacity": {
+                "name": "cargoCapacity",
+                "uuid": "6ae62772-008e-49b6-b460-c1d2147f987c",
+                "attributes": {
+                  "parameter": {
+                    "value": 25.0,
+                    "uuid": "3993d7b6-b310-44af-a931-ef602a254770",
+                    "type:": "float"
+                  }
+                }
+              },
+              "flightRange": {
+                "name": "flightRange",
+                "uuid": "117d5c81-b0c0-45ac-bea5-2c0b0e0b8cde",
+                "attributes": {
+                  "parameter": {
+                    "value": 10.0,
+                    "uuid": "726d0ddd-03a9-47fe-8e66-25a1a345660e",
+                    "type:": "float"
+                  }
+                }
+              },
+              "speed": {
+                "name": "speed",
+                "uuid": "33e41a98-4104-4124-87fb-d551c44cc108",
+                "attributes": {
+                  "parameter": {
+                    "value": 25.0,
+                    "uuid": "aa8fa962-5cba-492d-9fea-053ee88df63f",
+                    "type:": "float"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "hospital": {
+        "name": "hospital",
+        "uuid": "ae9e2b6f-c3fe-48f1-a2eb-6b52fee59195",
+        "attributes": {
+          "hospital1": {
+            "name": "hospital1",
+            "uuid": "341832bb-762e-437a-a20d-f60f552a84ea",
+            "attributes": {
+              "medCount": {
+                "name": "medCount",
+                "uuid": "2a305bb5-79d8-44c6-84fa-2f2f942cb94c",
+                "attributes": {
+                  "parameter": {
+                    "value": 5,
+                    "uuid": "d61c7378-de1c-45f6-9af2-7af0ae370f68",
+                    "type:": "integer"
+                  }
+                }
+              },
+              "remoteType": {
+                "name": "remoteType",
+                "uuid": "7e39d520-ddca-4d49-9043-6ba97ecc4370",
+                "attributes": {
+                  "parameter": {
+                    "value": true,
+                    "uuid": "593c6218-f731-4145-89ed-1312f483540e",
+                    "type": "boolean"
+                  }
+                }
+              },
+              "locX": {
+                "name": "locX",
+                "uuid": "adbd8426-316e-4269-8fd2-2c215778dbd2",
+                "attributes": {
+                  "parameter": {
+                    "value": 12.0,
+                    "uuid": "7eebc143-e924-4f53-91e3-9022c9edcbd2",
+                    "type:": "float"
+                  }
+                }
+              },
+              "locY": {
+                "name": "locY",
+                "uuid": "d33d8a3b-1691-4882-99ae-d1f59825d9cc",
+                "attributes": {
+                  "parameter": {
+                    "value": 15.0,
+                    "uuid": "4bf8b584-8522-4248-9faa-bd3717e7bad9",
+                    "type:": "float"
+                  }
+                }
+              }
+            }
+          },
+          "hospital": {
+            "name": "hospital",
+            "uuid": "3020f859-16b2-467b-9f9d-6196965b22ea",
+            "attributes": {
+              "locY": {
+                "name": "locY",
+                "uuid": "5542a30a-1656-4e99-a9ba-515abc233377",
+                "attributes": {
+                  "parameter": {
+                    "value": 0.0,
+                    "uuid": "6e0abb47-2fa3-4c35-94b5-cdcf99874196",
+                    "type:": "float"
+                  }
+                }
+              },
+              "locX": {
+                "name": "locX",
+                "uuid": "40ee5336-91fe-4b8c-a4d5-b23ccb0eb4c4",
+                "attributes": {
+                  "parameter": {
+                    "value": 0.0,
+                    "uuid": "04280b8e-1e51-48ba-afe6-095b0fdf31ad",
+                    "type:": "float"
+                  }
+                }
+              },
+              "medCount": {
+                "name": "medCount",
+                "uuid": "e52a268e-3ba9-4dae-a29a-76ed7f85bc4e",
+                "attributes": {
+                  "parameter": {
+                    "value": 999,
+                    "uuid": "97307254-4c5d-49e6-9c58-e780c55db57d",
+                    "type:": "integer"
+                  }
+                }
+              },
+              "remoteType": {
+                "name": "remoteType",
+                "uuid": "9d1d0720-d75f-4351-9370-a3c5f5b39a11",
+                "attributes": {
+                  "parameter": {
+                    "value": false,
+                    "uuid": "4437ce89-48f7-491f-af9f-a2337f790374",
+                    "type": "boolean"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
