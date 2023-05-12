@@ -17,17 +17,32 @@ to setup
 end
 
 to load-drone-data
-  set drone-data []
+  set -data []
   file-open "drone_data.csv"
-  while [not file-at-end?]
-  [
-    let row csv:from-row file-read-line
-    set drone-data lput (list (item 0 row) (item 1 row) (item 2 row) (item 3 row)) drone-data
+  if not file-at-end? [
+    let header-line file-read-line
+  ]
+  while [not file-at-end?] [
+    let current-line file-read-line
+    let row csv:from-row current-line
+    set drone-data lput row drone-data
   ]
   file-close
 end
 
-
+to load-hospital-data
+  set hospital-data []
+  file-open "hospital_data.csv"
+  if not file-at-end? [
+    let header-line file-read-line
+  ]
+  while [not file-at-end?] [
+    let current-line file-read-line
+    let row csv:from-row current-line
+    set hospital-data lput row hospital-data
+  ]
+  file-close
+end
 
 to load-model-data
   set model-data []
@@ -55,13 +70,15 @@ end
 to create-hospitals
   foreach hospital-data [
     row ->
-    crt 1 [
-      set shape "house"
-      setxy item 2 row item 3 row
-      set color red
-      set label item 0 row
-      set size 2
-    ]
+    ifelse length row > 0 [
+      crt 1 [
+        set shape "house"
+        setxy (item 2 row) (item 3 row)
+        set color red
+        set label item 0 row
+        set size 2
+      ]
+    ][]
   ]
 end
 @#$#@#$#@
