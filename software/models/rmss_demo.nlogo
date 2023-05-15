@@ -59,7 +59,7 @@ to create-drones
       set shape "airplane"
       set color blue
       set label item 0 row
-      set size 1.5
+      set size 1
     ]
   ]
 end
@@ -73,7 +73,7 @@ to create-hospitals
         setxy (item 2 row) (item 3 row)
         set color red
         set label item 0 row
-        set size 2
+        set size 1
       ]
     ][]
   ]

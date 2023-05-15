@@ -200,7 +200,7 @@
                 "uuid": "d33d8a3b-1691-4882-99ae-d1f59825d9cc",
                 "attributes": {
                   "parameter": {
-                    "value": 2.0,
+                    "value": 5.0,
                     "uuid": "4bf8b584-8522-4248-9faa-bd3717e7bad9",
                     "type:": "float"
                   }
