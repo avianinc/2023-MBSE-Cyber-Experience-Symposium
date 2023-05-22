@@ -1,0 +1,465 @@
+{
+  "rmss_d2A": {
+    "name": "rmss_d2A",
+    "uuid": "d3dd32ab-265a-43db-8a8d-6bf31fd1a9e4",
+    "attributes": {
+      "drone": {
+        "name": "drone",
+        "uuid": "7fe8207f-991f-459e-804a-556998a00d04",
+        "attributes": {
+          "drone1": {
+            "name": "drone1",
+            "uuid": "a760d764-8ec1-4e70-a6bc-fc8d61a2e877",
+            "attributes": {
+              "flightRange": {
+                "name": "flightRange",
+                "uuid": "b4d11402-e4eb-4460-b93b-940826ea4b19",
+                "attributes": {
+                  "parameter": {
+                    "value": 20.0,
+                    "uuid": "d738034c-c28d-48cc-88ed-2da3e52a6170",
+                    "type:": "float"
+                  }
+                }
+              },
+              "cargoCapacity": {
+                "name": "cargoCapacity",
+                "uuid": "67fe1594-ee75-4d13-b7f6-bd4734f3af64",
+                "attributes": {
+                  "parameter": {
+                    "value": 15.0,
+                    "uuid": "692e04eb-27b4-41d1-a5ea-8db90536fc2e",
+                    "type:": "float"
+                  }
+                }
+              },
+              "speed": {
+                "name": "speed",
+                "uuid": "1e4e50cd-9837-40a3-9f2d-03604c20b315",
+                "attributes": {
+                  "parameter": {
+                    "value": 85.0,
+                    "uuid": "b6d635c4-162b-4236-9c1a-7b18b95172c6",
+                    "type:": "float"
+                  }
+                }
+              }
+            }
+          },
+          "drone": {
+            "name": "drone",
+            "uuid": "6f23ec18-51c0-4b40-be36-cf61dd23929e",
+            "attributes": {
+              "flightRange": {
+                "name": "flightRange",
+                "uuid": "80e9bb90-59c7-4a56-9e36-970fb9dad11c",
+                "attributes": {
+                  "parameter": {
+                    "value": 5.0,
+                    "uuid": "8a04eaed-7108-4a64-a038-8ade2f09ddd3",
+                    "type:": "float"
+                  }
+                }
+              },
+              "speed": {
+                "name": "speed",
+                "uuid": "6ffba050-d8a0-4928-baed-268fbea9f8d4",
+                "attributes": {
+                  "parameter": {
+                    "value": 50.0,
+                    "uuid": "933b9d39-3676-4808-be78-7298fd472b3c",
+                    "type:": "float"
+                  }
+                }
+              },
+              "cargoCapacity": {
+                "name": "cargoCapacity",
+                "uuid": "a2ea2679-3afd-4c9d-aa70-a33f50069503",
+                "attributes": {
+                  "parameter": {
+                    "value": 5.0,
+                    "uuid": "5857534f-634f-42bf-8959-8a327425ad48",
+                    "type:": "float"
+                  }
+                }
+              }
+            }
+          },
+          "drone2": {
+            "name": "drone2",
+            "uuid": "19d8b15c-fc99-46bb-a163-abb1a640944c",
+            "attributes": {
+              "speed": {
+                "name": "speed",
+                "uuid": "745b8305-0ed8-43d8-996d-0261ac582f1b",
+                "attributes": {
+                  "parameter": {
+                    "value": 120.0,
+                    "uuid": "0d2ac4fe-563b-4cb7-8c87-e8cbe453e272",
+                    "type:": "float"
+                  }
+                }
+              },
+              "cargoCapacity": {
+                "name": "cargoCapacity",
+                "uuid": "19cd3797-cde9-4a2c-a94b-c111c49296d4",
+                "attributes": {
+                  "parameter": {
+                    "value": 50.0,
+                    "uuid": "bf9804cc-1338-4111-b80f-6e512f7c8e9e",
+                    "type:": "float"
+                  }
+                }
+              },
+              "flightRange": {
+                "name": "flightRange",
+                "uuid": "2120b0a3-6c0e-43eb-9a5d-3f957392e4d9",
+                "attributes": {
+                  "parameter": {
+                    "value": 15.0,
+                    "uuid": "6e679964-38d1-4c97-9243-6150ba3505c5",
+                    "type:": "float"
+                  }
+                }
+              }
+            }
+          },
+          "drone3": {
+            "name": "drone3",
+            "uuid": "3ac03470-5700-49bc-8f89-2843d9168e09",
+            "attributes": {
+              "speed": {
+                "name": "speed",
+                "uuid": "d236dbb3-b441-47f9-9f4a-cff446fccc41",
+                "attributes": {
+                  "parameter": {
+                    "value": 15.0,
+                    "uuid": "4057a0ec-aa47-4562-802b-10da81319088",
+                    "type:": "float"
+                  }
+                }
+              },
+              "cargoCapacity": {
+                "name": "cargoCapacity",
+                "uuid": "d0fd9725-fd70-4349-846d-880ded071730",
+                "attributes": {
+                  "parameter": {
+                    "value": 23.0,
+                    "uuid": "21e5f136-6334-46c5-8ee8-d9c6b9da99b8",
+                    "type:": "float"
+                  }
+                }
+              },
+              "flightRange": {
+                "name": "flightRange",
+                "uuid": "3bd9a6c0-f3af-411a-8578-951d4b5614aa",
+                "attributes": {
+                  "parameter": {
+                    "value": 20.0,
+                    "uuid": "f862f7a8-7556-4e98-a859-d0c90f861d26",
+                    "type:": "float"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "hospital": {
+        "name": "hospital",
+        "uuid": "9b6e54c4-2596-4273-bf83-8fcff43fe650",
+        "attributes": {
+          "hospital": {
+            "name": "hospital",
+            "uuid": "94a92962-fd20-4872-9a49-79993de2effd",
+            "attributes": {
+              "locX": {
+                "name": "locX",
+                "uuid": "2659b98b-ad3b-4388-8b18-5135f3edc533",
+                "attributes": {
+                  "parameter": {
+                    "value": 0.0,
+                    "uuid": "af18563b-c80e-4626-bb58-354e58dc129d",
+                    "type:": "float"
+                  }
+                }
+              },
+              "locY": {
+                "name": "locY",
+                "uuid": "8811ed88-b322-45ff-9976-1e2611a80157",
+                "attributes": {
+                  "parameter": {
+                    "value": 0.0,
+                    "uuid": "abd4a4a2-491a-4080-a5bf-8cee1fa1403f",
+                    "type:": "float"
+                  }
+                }
+              },
+              "remoteType": {
+                "name": "remoteType",
+                "uuid": "b642decb-3f5a-4c65-9ed7-99705fb69eab",
+                "attributes": {
+                  "parameter": {
+                    "value": false,
+                    "uuid": "fa77754e-c48b-401f-a9ae-1393c2238db3",
+                    "type": "boolean"
+                  }
+                }
+              },
+              "charging System": {
+                "name": "charging System",
+                "uuid": "54f2fac7-b68e-440c-9120-bb328505aa91",
+                "attributes": {
+                  "charging System": {
+                    "name": "charging System",
+                    "uuid": "5b008813-2b07-4af7-8b8c-4cb3dbc0e2f2",
+                    "attributes": {}
+                  }
+                }
+              },
+              "medCount": {
+                "name": "medCount",
+                "uuid": "c06e7983-79c7-4f87-90e3-fa7e3f8c39d7",
+                "attributes": {
+                  "parameter": {
+                    "value": 999.0,
+                    "uuid": "b0f93041-93de-4c10-837a-6d51db444b35",
+                    "type:": "float"
+                  }
+                }
+              }
+            }
+          },
+          "hospital4": {
+            "name": "hospital4",
+            "uuid": "0fcd5b15-a07a-49a4-a9a7-a6f7219c0467",
+            "attributes": {
+              "locY": {
+                "name": "locY",
+                "uuid": "d74f74bd-8576-47a8-aa09-aba3db2f72a0",
+                "attributes": {
+                  "parameter": {
+                    "value": 12.0,
+                    "uuid": "3c005021-578f-43cb-b9f5-46342c1b8b64",
+                    "type:": "float"
+                  }
+                }
+              },
+              "medCount": {
+                "name": "medCount",
+                "uuid": "07808181-c51e-458b-91bb-c03a1dfb9102",
+                "attributes": {
+                  "parameter": {
+                    "value": 20.0,
+                    "uuid": "33755540-9150-4769-82ca-e07a82591c60",
+                    "type:": "float"
+                  }
+                }
+              },
+              "locX": {
+                "name": "locX",
+                "uuid": "84809f6c-f940-4573-a12b-ac6a4572994a",
+                "attributes": {
+                  "parameter": {
+                    "value": -12.0,
+                    "uuid": "734114cf-ecc4-4e5f-b84d-6e90a08d99e9",
+                    "type:": "float"
+                  }
+                }
+              },
+              "remoteType": {
+                "name": "remoteType",
+                "uuid": "3bae6ecf-6cfc-4666-8ce1-69cc8be0ac43",
+                "attributes": {
+                  "parameter": {
+                    "value": true,
+                    "uuid": "1c585b06-e118-4984-8ed8-440ae2536f9b",
+                    "type": "boolean"
+                  }
+                }
+              }
+            }
+          },
+          "hospital2": {
+            "name": "hospital2",
+            "uuid": "e6265daa-3b0c-41a2-9913-46da241fee5a",
+            "attributes": {
+              "medCount": {
+                "name": "medCount",
+                "uuid": "a2596910-5d35-449f-8a9b-14303548ff03",
+                "attributes": {
+                  "parameter": {
+                    "value": 9.0,
+                    "uuid": "567b9c5b-d727-41c5-8724-186cefd82a3b",
+                    "type:": "float"
+                  }
+                }
+              },
+              "remoteType": {
+                "name": "remoteType",
+                "uuid": "c39aadf8-2cff-47d6-993e-87b26c092391",
+                "attributes": {
+                  "parameter": {
+                    "value": true,
+                    "uuid": "e0456f44-1c7e-4857-9bb9-2856d157788d",
+                    "type": "boolean"
+                  }
+                }
+              },
+              "locX": {
+                "name": "locX",
+                "uuid": "828d7441-acb4-4703-8062-a096b8b75a5f",
+                "attributes": {
+                  "parameter": {
+                    "value": 5.0,
+                    "uuid": "ea89c772-b233-44c2-b86d-f685970dd4e8",
+                    "type:": "float"
+                  }
+                }
+              },
+              "locY": {
+                "name": "locY",
+                "uuid": "fb06ae68-42f8-41b1-865e-5a8ac91d6472",
+                "attributes": {
+                  "parameter": {
+                    "value": 11.0,
+                    "uuid": "db32c842-f95a-4fac-8a31-cfd65fddfa47",
+                    "type:": "float"
+                  }
+                }
+              }
+            }
+          },
+          "hospital1": {
+            "name": "hospital1",
+            "uuid": "cbadcdc7-e638-45bc-94e2-07c519d7c23d",
+            "attributes": {
+              "locX": {
+                "name": "locX",
+                "uuid": "cb873b5c-3818-4b13-8692-2bc34c3dedf2",
+                "attributes": {
+                  "parameter": {
+                    "value": 0.0,
+                    "uuid": "ac57e582-844e-4b49-bd35-6214e23fa5a9",
+                    "type:": "float"
+                  }
+                }
+              },
+              "medCount": {
+                "name": "medCount",
+                "uuid": "a0510c1d-e9f5-4a85-a204-19ceb2751b0f",
+                "attributes": {
+                  "parameter": {
+                    "value": 50.0,
+                    "uuid": "cfcac314-989f-4fb3-a89a-8c6d2e3f29de",
+                    "type:": "float"
+                  }
+                }
+              },
+              "remoteType": {
+                "name": "remoteType",
+                "uuid": "55395aae-ba77-47d4-8d07-bbce8e314c1c",
+                "attributes": {
+                  "parameter": {
+                    "value": true,
+                    "uuid": "788873bd-dad7-40ce-bd32-eeb28f5dee99",
+                    "type": "boolean"
+                  }
+                }
+              },
+              "locY": {
+                "name": "locY",
+                "uuid": "7aaacb79-4550-4695-8dbc-d2d4446c3157",
+                "attributes": {
+                  "parameter": {
+                    "value": 15.0,
+                    "uuid": "6c0b140b-dde0-4796-8c51-83b17ae032f4",
+                    "type:": "float"
+                  }
+                }
+              }
+            }
+          },
+          "hospital3": {
+            "name": "hospital3",
+            "uuid": "fdee4345-9e93-4043-90a1-8efb21e68491",
+            "attributes": {
+              "medCount": {
+                "name": "medCount",
+                "uuid": "a7b05068-1d2a-4a27-88ee-4aba5faf4d22",
+                "attributes": {
+                  "parameter": {
+                    "value": 20.0,
+                    "uuid": "7b161954-c625-47d4-81e6-3f17dd008982",
+                    "type:": "float"
+                  }
+                }
+              },
+              "remoteType": {
+                "name": "remoteType",
+                "uuid": "2dbdf448-4853-4d23-bc73-699f1e95cb7d",
+                "attributes": {
+                  "parameter": {
+                    "value": true,
+                    "uuid": "8e5f56b4-6560-4876-85fc-ac32d663120d",
+                    "type": "boolean"
+                  }
+                }
+              },
+              "locY": {
+                "name": "locY",
+                "uuid": "9a992437-ddc5-44da-b30b-456be4b2220c",
+                "attributes": {
+                  "parameter": {
+                    "value": -11.0,
+                    "uuid": "7e41da6d-6054-48c5-ae4f-cf75f329bfdb",
+                    "type:": "float"
+                  }
+                }
+              },
+              "locX": {
+                "name": "locX",
+                "uuid": "df340205-a758-4c40-8339-6b6ddb8f11fd",
+                "attributes": {
+                  "parameter": {
+                    "value": -5.0,
+                    "uuid": "f76b3771-b68e-4e61-8c86-20df57ab3a19",
+                    "type:": "float"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "": {
+        "name": "",
+        "uuid": "58686232-83f1-4714-a07e-b9fb29d7cc85",
+        "attributes": {
+          "emergencyResponseTime": {
+            "name": "emergencyResponseTime",
+            "uuid": "fa1508e4-e9db-49be-8335-1b33d945666b",
+            "attributes": {
+              "parameter": {
+                "value": 75.0,
+                "uuid": "29f3a618-0877-4541-beaf-458f606623c2",
+                "type:": "float"
+              }
+            }
+          },
+          "standardResponseTime": {
+            "name": "standardResponseTime",
+            "uuid": "3a826712-5125-4b49-be53-8afc659fc459",
+            "attributes": {
+              "parameter": {
+                "value": 120.0,
+                "uuid": "144a866e-0a29-48ad-9412-fc946ef40e4d",
+                "type:": "float"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
