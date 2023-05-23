@@ -5,10 +5,9 @@ This GitHub repository contains the documentation and software materials to supp
 The repository is organized as follows:
 
     docs/: Contains all documentation related to the project, including papers, reports, and slides.
+    examples/: Provides examples, datasets, and configuration files for test.
+    license/LICENSE: The license file for the project.
     software/: Holds the source code, scripts, and tools developed or used during the project.
-    examples/: Provides example use cases, datasets, and configuration files to demonstrate the capabilities of our approach.
-    images/: Stores images and other graphical assets used in the presentation and documentation.
-    LICENSE: The license file for the project.
     README.md: This file, which provides an overview of the repository and its contents.
 
 ## Getting Started

@@ -1,6 +1,5 @@
 hospitalName,remoteType,locX,locY,medCount
-hospital,False,0.0,0.0,999.0
-hospital4,True,-12.0,12.0,20.0
-hospital2,True,5.0,11.0,9.0
-hospital1,True,0.0,15.0,50.0
-hospital3,True,-5.0,-11.0,20.0
+hospital_remote,True,12.0,13.0,10
+hospital_city,False,0.0,0.0,999
+hospital,True,0.0,12.0,6
+hospital_remote2,True,-12.0,-12.0,5

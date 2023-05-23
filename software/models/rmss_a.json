@@ -1,0 +1,187 @@
+{
+  "rmss_A": {
+    "name": "rmss_A",
+    "uuid": "ecce955c-963c-47a0-b634-d6de3a567da8",
+    "attributes": {
+      "drone": {
+        "name": "drone",
+        "uuid": "f5b06c2f-5cd7-4005-afbf-87a57880e935",
+        "attributes": {
+          "drone": {
+            "name": "drone",
+            "uuid": "c6274caf-611e-4529-8e02-5700ce35e6b3",
+            "attributes": {}
+          },
+          "drone1": {
+            "name": "drone1",
+            "uuid": "f0e35c43-4869-47ef-8178-c0e660e2f56a",
+            "attributes": {}
+          },
+          "drone2": {
+            "name": "drone2",
+            "uuid": "da4fb910-b919-477c-a322-658eac86ae57",
+            "attributes": {}
+          }
+        }
+      },
+      "": {
+        "name": "",
+        "uuid": "c5759d66-acf4-47c5-bc7d-d07903dfed66",
+        "attributes": {
+          "emergencyResponseTime": {
+            "name": "emergencyResponseTime",
+            "uuid": "df01af82-3794-46f3-9543-7860b99190d7",
+            "attributes": {
+              "parameter": {
+                "value": 18.0,
+                "uuid": "ea5df275-8eb0-47d4-a3c9-67534fbef4a4",
+                "type:": "float"
+              }
+            }
+          },
+          "standardResponseTIme": {
+            "name": "standardResponseTIme",
+            "uuid": "0cc7d3a1-1c74-4f52-bfba-1cf2df378bc1",
+            "attributes": {
+              "parameter": {
+                "value": 50.0,
+                "uuid": "4addd966-ee1c-4833-8023-0cf32f0c1eb8",
+                "type:": "float"
+              }
+            }
+          }
+        }
+      },
+      "hospital": {
+        "name": "hospital",
+        "uuid": "73765640-1048-4380-a5d4-cf24da0bc5ac",
+        "attributes": {
+          "hospital": {
+            "name": "hospital",
+            "uuid": "c6bef81d-df6c-4c46-bee2-2450407189a9",
+            "attributes": {
+              "": {
+                "name": "",
+                "uuid": "85e9c2c8-16de-4cd0-b421-7791160e0e85",
+                "attributes": {
+                  "locX": {
+                    "name": "locX",
+                    "uuid": "c9b08fd8-0bef-40c8-9a6f-f83265340eee",
+                    "attributes": {
+                      "parameter": {
+                        "value": 0.0,
+                        "uuid": "626c5a2b-e829-4649-bcb6-a2bd08d11587",
+                        "type:": "float"
+                      }
+                    }
+                  },
+                  "remoteType": {
+                    "name": "remoteType",
+                    "uuid": "b6c54543-b203-4c0a-9a12-12a4a0f8631f",
+                    "attributes": {
+                      "parameter": {
+                        "value": false,
+                        "uuid": "cc0db6f5-dcc7-4461-be0c-1ed8b1980860",
+                        "type": "boolean"
+                      }
+                    }
+                  },
+                  "locY": {
+                    "name": "locY",
+                    "uuid": "0e5a4ec6-7e29-4367-9338-fef5bc73fb82",
+                    "attributes": {
+                      "parameter": {
+                        "value": 0.0,
+                        "uuid": "ef72a0e1-bf42-498b-9f8f-5f2b11e26336",
+                        "type:": "float"
+                      }
+                    }
+                  }
+                }
+              },
+              "medicine": {
+                "name": "medicine",
+                "uuid": "ca40e8ea-46e6-441d-8406-4115769dd01d",
+                "attributes": {
+                  "medicine": {
+                    "name": "medicine",
+                    "uuid": "f8c3bd7a-a4e3-4e41-8215-342f1dff3320",
+                    "attributes": {
+                      "mass": {
+                        "name": "mass",
+                        "uuid": "dced7c2d-eea6-4864-ba82-7c870d7a9dc9",
+                        "attributes": {
+                          "parameter": {
+                            "value": 0.0,
+                            "uuid": "e5e68e8c-188c-4cd0-8841-20bf5da71904",
+                            "type:": "float"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "hospital1": {
+            "name": "hospital1",
+            "uuid": "2ea2d037-d40c-40a4-a8f4-ca221a9bf5cf",
+            "attributes": {
+              "": {
+                "name": "",
+                "uuid": "f5de3c44-4c28-4837-9c19-bb144182d241",
+                "attributes": {
+                  "remoteType": {
+                    "name": "remoteType",
+                    "uuid": "d34e06a6-3540-43b6-bee6-67bc25d3673f",
+                    "attributes": {
+                      "parameter": {
+                        "value": true,
+                        "uuid": "dbce6ea4-1a00-43b6-a111-8e35d47a8616",
+                        "type": "boolean"
+                      }
+                    }
+                  },
+                  "locY": {
+                    "name": "locY",
+                    "uuid": "de28d89a-0276-4067-8811-a6be0c453345",
+                    "attributes": {
+                      "parameter": {
+                        "value": 15.0,
+                        "uuid": "6b9aee89-82c0-40cf-a166-44ee7ef20333",
+                        "type:": "float"
+                      }
+                    }
+                  },
+                  "locX": {
+                    "name": "locX",
+                    "uuid": "852d5891-8cfd-49a5-a87b-e5e469e70298",
+                    "attributes": {
+                      "parameter": {
+                        "value": 12.0,
+                        "uuid": "e35c5096-9790-413a-952f-2585723f8ce4",
+                        "type:": "float"
+                      }
+                    }
+                  }
+                }
+              },
+              "medicine": {
+                "name": "medicine",
+                "uuid": "3733c5d8-db4b-41a8-ac44-5125cc2d74c7",
+                "attributes": {
+                  "medicine1": {
+                    "name": "medicine1",
+                    "uuid": "9ab4c646-625b-4f5a-a90a-36e48c7119dc",
+                    "attributes": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
