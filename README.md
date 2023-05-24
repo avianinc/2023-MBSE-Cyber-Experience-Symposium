@@ -1,6 +1,8 @@
 # 2023 MBSE Cyber Experience Symposium - Presentation Support Repository
 This GitHub repository contains the documentation and software materials to support the presentation at the 2023 Model-Based Systems Engineering (MBSE) Cyber Experience Symposium. The presentation focuses on our innovative approach to enhance cybersecurity using MBSE principles and techniques.
 
+## Note... this code was tested using Cameo 19.0SP4. I have not had a chance to verify it againt a 20X installation :(
+
 ## Repository Structure
 The repository is organized as follows:
 
