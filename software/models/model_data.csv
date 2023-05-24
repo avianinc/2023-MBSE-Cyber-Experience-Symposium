@@ -1,2 +1,2 @@
-Model,emergencyResponseTime,standardResponseTIme
-rmss,20.0,50.0
+Model,standardResponseTIme,emergencyResponseTime
+rmss_B,50.0,12.0

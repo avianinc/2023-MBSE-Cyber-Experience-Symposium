@@ -1,0 +1,210 @@
+{
+  "rmss_B": {
+    "name": "rmss_B",
+    "uuid": "c084cc49-24d8-4a46-b1ac-216b4fd6e74a",
+    "attributes": {
+      "drone": {
+        "name": "drone",
+        "uuid": "047e181d-1767-4bef-9c86-2382607ef0e0",
+        "attributes": {
+          "drone": {
+            "name": "drone",
+            "uuid": "847443ba-a5a7-4588-bc5b-ea3b06521415",
+            "attributes": {
+              "flightRange": {
+                "name": "flightRange",
+                "uuid": "80563841-34f4-42d7-bbd4-0475f5893b31",
+                "attributes": {
+                  "parameter": {
+                    "value": 120.0,
+                    "uuid": "33ec634a-4365-4ad4-84c3-4f74d758cac3",
+                    "type:": "float"
+                  }
+                }
+              },
+              "speed": {
+                "name": "speed",
+                "uuid": "60d4ea87-fcbb-426d-a12b-2241292043d7",
+                "attributes": {
+                  "parameter": {
+                    "value": 20.0,
+                    "uuid": "8c5d48cc-a780-4b77-b250-3287d9dc0b23",
+                    "type:": "float"
+                  }
+                }
+              },
+              "cargoCapacity": {
+                "name": "cargoCapacity",
+                "uuid": "c1ec8ef8-0013-408c-8bdd-f24287e42d86",
+                "attributes": {
+                  "parameter": {
+                    "value": 50.0,
+                    "uuid": "d0680d02-f6c1-4afc-b4c0-fe94ea0748bd",
+                    "type:": "float"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "": {
+        "name": "",
+        "uuid": "832b581d-7958-4b2f-b88c-f9cea59e48a4",
+        "attributes": {
+          "emergencyResponseTime": {
+            "name": "emergencyResponseTime",
+            "uuid": "38b656ad-1666-499d-8e4e-27d0ca78f688",
+            "attributes": {
+              "parameter": {
+                "value": 80.0,
+                "uuid": "9943a935-0065-482c-99fe-9947ac229b37",
+                "type:": "float"
+              }
+            }
+          },
+          "standardResponseTIme": {
+            "name": "standardResponseTIme",
+            "uuid": "a9f53794-5d2d-424a-9372-10a3ae5df75b",
+            "attributes": {
+              "parameter": {
+                "value": 50.0,
+                "uuid": "49b0ac1b-bc31-4330-b1eb-f7e6a43b63a3",
+                "type:": "float"
+              }
+            }
+          }
+        }
+      },
+      "hospital": {
+        "name": "hospital",
+        "uuid": "15099345-7fb6-43e4-9d66-c625d8caac42",
+        "attributes": {
+          "hospital": {
+            "name": "hospital",
+            "uuid": "0728578f-4e27-418c-aea1-a477e0a3425a",
+            "attributes": {
+              "remoteType": {
+                "name": "remoteType",
+                "uuid": "79f4eba0-8428-45cd-a371-ac6663eb8e13",
+                "attributes": {
+                  "parameter": {
+                    "value": false,
+                    "uuid": "02ec9e03-cf3e-4398-82dc-0e28253c19b0",
+                    "type": "boolean"
+                  }
+                }
+              },
+              "carging Station": {
+                "name": "carging Station",
+                "uuid": "0c83a60a-5a89-490a-9626-1eacff80078c",
+                "attributes": {
+                  "charging Station": {
+                    "name": "charging Station",
+                    "uuid": "8b35dfad-604e-4d27-92b5-19912a98e663",
+                    "attributes": {
+                      "chargeRate": {
+                        "name": "chargeRate",
+                        "uuid": "ada1d37b-32d2-48b0-8362-c77a6f6cd1c1",
+                        "attributes": {
+                          "parameter": {
+                            "value": 1220.0,
+                            "uuid": "a0e05eb4-2db7-4bac-8a8c-b0bcab9e8aa4",
+                            "type:": "float"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "medCount": {
+                "name": "medCount",
+                "uuid": "02310c97-e311-4044-bdb4-fdaa2d9adf7f",
+                "attributes": {
+                  "parameter": {
+                    "value": 100,
+                    "uuid": "beb8b510-52e2-47a0-8476-5a253a4c853d",
+                    "type:": "integer"
+                  }
+                }
+              },
+              "locY": {
+                "name": "locY",
+                "uuid": "74a6a978-fec2-429a-914d-2bdfa0f6abac",
+                "attributes": {
+                  "parameter": {
+                    "value": 0.0,
+                    "uuid": "992eca28-b17e-4e9e-a017-a84f27cf4c5e",
+                    "type:": "float"
+                  }
+                }
+              },
+              "locX": {
+                "name": "locX",
+                "uuid": "fff65356-c356-4974-a514-47dedfce7afe",
+                "attributes": {
+                  "parameter": {
+                    "value": 0.0,
+                    "uuid": "dd943de1-071b-4bc5-8362-26e97570463a",
+                    "type:": "float"
+                  }
+                }
+              }
+            }
+          },
+          "hospital1": {
+            "name": "hospital1",
+            "uuid": "da1051fb-1975-4f46-b67a-d29eec9223f0",
+            "attributes": {
+              "locX": {
+                "name": "locX",
+                "uuid": "c0d46f5b-69d6-4f8e-a409-4a71a96723aa",
+                "attributes": {
+                  "parameter": {
+                    "value": 1.0,
+                    "uuid": "6b3a37c2-aabc-4ba5-bb00-e56145d25e48",
+                    "type:": "float"
+                  }
+                }
+              },
+              "remoteType": {
+                "name": "remoteType",
+                "uuid": "3d543f3a-d30f-4531-acfd-181aba03d21b",
+                "attributes": {
+                  "parameter": {
+                    "value": false,
+                    "uuid": "3a7fe5a9-0f12-40d3-86e0-1b58c08dc7d1",
+                    "type": "boolean"
+                  }
+                }
+              },
+              "locY": {
+                "name": "locY",
+                "uuid": "d38a163e-9c1e-4abe-a221-5ec06dbc1e19",
+                "attributes": {
+                  "parameter": {
+                    "value": 10.0,
+                    "uuid": "fb8bc3a9-622e-4cc4-9572-16f0e749bb9f",
+                    "type:": "float"
+                  }
+                }
+              },
+              "medCount": {
+                "name": "medCount",
+                "uuid": "16f29bec-90fb-4d85-ae92-e445b04cbd3f",
+                "attributes": {
+                  "parameter": {
+                    "value": 99,
+                    "uuid": "4437a125-706b-4507-8800-b2faa8fca4b1",
+                    "type:": "integer"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

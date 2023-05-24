@@ -46,6 +46,13 @@
               }
             }
           },
+          "Comment": {
+            "name": "Comment",
+            "uuid": "9862a41d-a11b-4178-900b-dd76d3d9ec4b",
+            "attributes": {
+              "body": "This is a slot... Im never sure how to handle these in code so I just delete them."
+            }
+          },
           "drone_heavy": {
             "name": "drone_heavy",
             "uuid": "18755f5b-2329-462f-8ed0-69e2074b0de0",
@@ -126,6 +133,13 @@
           }
         }
       },
+      "Comment": {
+        "name": "Comment",
+        "uuid": "cd603775-8048-4a9b-9b21-121611751659",
+        "attributes": {
+          "body": "Remote medical support system - as an instance"
+        }
+      },
       "": {
         "name": "",
         "uuid": "703feb0f-0d22-45af-aadb-dc876cdf0cbf",
@@ -158,6 +172,13 @@
         "name": "hospital",
         "uuid": "7e200bab-2747-4e42-9d6d-dca59229f9da",
         "attributes": {
+          "Comment": {
+            "name": "Comment",
+            "uuid": "b5f58910-0d72-4239-b272-6c1ba44cc393",
+            "attributes": {
+              "body": "Hopsital instances.. these are all hospitals and I should have made the code auto recongize."
+            }
+          },
           "hospital_remote": {
             "name": "hospital_remote",
             "uuid": "a2e97c2f-31f7-4829-9226-dfb1f4c3e1eb",
@@ -191,7 +212,19 @@
                   "carging Station": {
                     "name": "carging Station",
                     "uuid": "116e502a-af8f-432e-86c5-cc0118324597",
-                    "attributes": {}
+                    "attributes": {
+                      "chargeRate": {
+                        "name": "chargeRate",
+                        "uuid": "cd5795d4-765c-4ba1-b934-738bbf2626b3",
+                        "attributes": {
+                          "parameter": {
+                            "value": 150.0,
+                            "uuid": "5c99faf5-bd01-4509-820f-daaeaf11079c",
+                            "type:": "float"
+                          }
+                        }
+                      }
+                    }
                   }
                 }
               },
